@@ -64,12 +64,13 @@ void displayCube() {
 	glLightModeli(GL_LIGHT_MODEL_LOCAL_VIEWER, GL_TRUE);
 	glEnable(GL_LIGHTING);
 	glEnable(GL_LIGHT0);
-    setLight();
+    //setLight(0.5, 0.5, 0.0);
+    //setLight(-0.5, 0.5, 0.0);
 	rubiks.drawCube();
     glFlush();
 }
 
-void setLight() {
+void setLight(float x, float y, float z) {
 	// Set lighting intensity and color
 	GLfloat qaAmbientLight[]	= {0.2, 0.2, 0.2, 1.0};
 	GLfloat qaDiffuseLight[]	= {0.8, 0.8, 0.8, 1.0};
@@ -79,15 +80,11 @@ void setLight() {
 	glLightfv(GL_LIGHT0, GL_SPECULAR, qaSpecularLight);
 
 	// Set the light position
-	GLfloat qaLightPosition[]	= {0.5, 0.5, 0.0, 0.0};
+	//GLfloat qaLightPosition[]	= {0.5, 0.5, 0.0, 0.0};
+	GLfloat qaLightPosition[]	= {x, y, z, 0.0};
 	glLightfv(GL_LIGHT0, GL_POSITION, qaLightPosition);
-<<<<<<< HEAD
 
-	rubiks.drawCube();
-
-    glFlush();
-=======
->>>>>>> ec0b55c7aa3ae806f6c5d55943436df33f26e981
+	glFlush();
 }
 
 void displayCube5() {
@@ -131,7 +128,9 @@ void keyPressed (unsigned char key, int x, int y) {
     default:
       break;
   }
-  setLight();
+
+  setLight(0.5, 0.5, 0.0);
+  setLight(-0.5, 0.5, 0.0);
 }
 
 void keyPressed5 (unsigned char key, int x, int y) {
@@ -166,7 +165,8 @@ void keyPressed5 (unsigned char key, int x, int y) {
     default:
       break;
   }
-  setLight();
+  setLight(0.5, 0.5, 0.0);
+  setLight(-0.5, 0.5, 0.0);
 }
 
 void toggleDirection() {
