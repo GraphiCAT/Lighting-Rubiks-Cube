@@ -113,9 +113,12 @@ void Cell::drawCell() {
     float y = location.getY()*2.25;
     float z = location.getZ()*2.25;
     GLfloat clBlack[] = {0.0, 0.0, 0.0, 1.0};
-    glBegin(GL_QUADS);		// Draw The Cube Using quads
 
+
+    glBegin(GL_QUADS);		// Draw The Cube Using quads
+    glNormal3f((GLfloat)normal.getX(),(GLfloat)normal.getY(),(GLfloat)normal.getZ());
     if (getFace() == 0) {
+        //glNormal3f(0.0f,-1.0f,0.0f);
         glMaterialfv(GL_FRONT, GL_AMBIENT, clBlack);
         glMaterialfv(GL_FRONT, GL_DIFFUSE, clBlack);
         glVertex3f(x+blackspace, y+blackspace, z-blackspace);	// Top Right Of The Quad (Top)
@@ -124,14 +127,17 @@ void Cell::drawCell() {
         glVertex3f(x+blackspace, y+blackspace, z+blackspace);	// Bottom Right Of The Quad (Top)
         glEnd();
 
-        setColor();
         glBegin(GL_QUADS);		// Draw The Cube Using quads
+        setColor();
+        //glNormal3f(0.0f,-1.0f,0.0f);
+        glNormal3f((GLfloat)normal.getX(),(GLfloat)normal.getY(),(GLfloat)normal.getZ());
         glVertex3f(x+size, y+size, z-size);	// Top Right Of The Quad (Top)
         glVertex3f(x-size, y+size, z-size);	// Top Left Of The Quad (Top)
         glVertex3f(x-size, y+size, z+size);	// Bottom Left Of The Quad (Top)
         glVertex3f(x+size, y+size, z+size);	// Bottom Right Of The Quad (Top)
 
     } else if (getFace() == 1) {
+        //glNormal3f(0.0f,1.0f,0.0f);
         glMaterialfv(GL_FRONT, GL_AMBIENT, clBlack);
         glMaterialfv(GL_FRONT, GL_DIFFUSE, clBlack);
         glVertex3f(x+blackspace, y-blackspace, z+blackspace);	// Top Right Of The Quad (Bottom)
@@ -140,13 +146,16 @@ void Cell::drawCell() {
         glVertex3f(x+blackspace, y-blackspace, z-blackspace);	// Bottom Right Of The Quad (Bottom)
         glEnd();
 
-        setColor();
         glBegin(GL_QUADS);		// Draw The Cube Using quads
+        setColor();
+        //glNormal3f(0.0f,1.0f,0.0f);
+        glNormal3f((GLfloat)normal.getX(),(GLfloat)normal.getY(),(GLfloat)normal.getZ());
         glVertex3f(x+size, y-size, z+size);	// Top Right Of The Quad (Bottom)
         glVertex3f(x-size, y-size, z+size);	// Top Left Of The Quad (Bottom)
         glVertex3f(x-size, y-size, z-size);	// Bottom Left Of The Quad (Bottom)
         glVertex3f(x+size, y-size, z-size);	// Bottom Right Of The Quad (Bottom)
     } else if (getFace() == 2) {
+        //glNormal3f(1.0f,0.0f,0.0f);
         glMaterialfv(GL_FRONT, GL_AMBIENT, clBlack);
         glMaterialfv(GL_FRONT, GL_DIFFUSE, clBlack);
         glVertex3f(x+blackspace-0.2, y+blackspace, z-blackspace);	// Top Right Of The Quad (Right)
@@ -155,13 +164,16 @@ void Cell::drawCell() {
         glVertex3f(x+blackspace-0.2, y-blackspace, z-blackspace);	// Bottom Right Of The Quad (Right)
         glEnd();
 
-        setColor();
         glBegin(GL_QUADS);		// Draw The Cube Using quads
+        setColor();
+        //glNormal3f(1.0f,0.0f,0.0f);
+        glNormal3f((GLfloat)normal.getX(),(GLfloat)normal.getY(),(GLfloat)normal.getZ());
         glVertex3f(x+size, y+size, z-size);	// Top Right Of The Quad (Right)
         glVertex3f(x+size, y+size, z+size);	// Top Left Of The Quad (Right)
         glVertex3f(x+size, y-size, z+size);	// Bottom Left Of The Quad (Right)
         glVertex3f(x+size, y-size, z-size);	// Bottom Right Of The Quad (Right)
     } else if (getFace() == 3) {
+        //glNormal3f(-1.0f,0.0f,0.0f);
         glMaterialfv(GL_FRONT, GL_AMBIENT, clBlack);
         glMaterialfv(GL_FRONT, GL_DIFFUSE, clBlack);
         glVertex3f(x-blackspace+0.2, y+blackspace, z+blackspace);	// Top Right Of The Quad (Left)
@@ -170,13 +182,16 @@ void Cell::drawCell() {
         glVertex3f(x-blackspace+0.2, y-blackspace, z+blackspace);	// Bottom Right Of The Quad (Left)
         glEnd();
 
-        setColor();
         glBegin(GL_QUADS);		// Draw The Cube Using quads
+        setColor();
+        glNormal3f(-1.0f,0.0f,0.0f);
+        //glNormal3f((GLfloat)normal.getX(),(GLfloat)normal.getY(),(GLfloat)normal.getZ());
         glVertex3f(x-size, y+size, z+size);	// Top Right Of The Quad (Left)
         glVertex3f(x-size, y+size, z-size);	// Top Left Of The Quad (Left)
         glVertex3f(x-size, y-size, z-size);	// Bottom Left Of The Quad (Left)
         glVertex3f(x-size, y-size, z+size);	// Bottom Right Of The Quad (Left)
     } else if (getFace() == 4) {
+        //glNormal3f(0.0f,0.0f,-1.0f);
         glMaterialfv(GL_FRONT, GL_AMBIENT, clBlack);
         glMaterialfv(GL_FRONT, GL_DIFFUSE, clBlack);
         glVertex3f(x+blackspace, y-blackspace, z-blackspace+0.2);	// Top Right Of The Quad (Back)
@@ -185,13 +200,16 @@ void Cell::drawCell() {
         glVertex3f(x+blackspace, y+blackspace, z-blackspace+0.2);	// Bottom Right Of The Quad (Back)
         glEnd();
 
-        setColor();
         glBegin(GL_QUADS);		// Draw The Cube Using quads
+        setColor();
+        glNormal3f(0.0f,0.0f,-1.0f);
+        glNormal3f((GLfloat)normal.getX(),(GLfloat)normal.getY(),(GLfloat)normal.getZ());
         glVertex3f(x+size, y-size, z-size);	// Top Right Of The Quad (Back)
         glVertex3f(x-size, y-size, z-size);	// Top Left Of The Quad (Back)
         glVertex3f(x-size, y+size, z-size);	// Bottom Left Of The Quad (Back)
         glVertex3f(x+size, y+size, z-size);	// Bottom Right Of The Quad (Back)
     } else if (getFace() == 5) {
+        //glNormal3f(0.0f,0.0f,1.0f);
         glMaterialfv(GL_FRONT, GL_AMBIENT, clBlack);
         glMaterialfv(GL_FRONT, GL_DIFFUSE, clBlack);
         glVertex3f(x+blackspace, y+blackspace, z+blackspace-0.2);	// Top Right Of The Quad (Front)
@@ -200,8 +218,10 @@ void Cell::drawCell() {
         glVertex3f(x+blackspace, y-blackspace, z+blackspace-0.2);	// Bottom Right Of The Quad (Front)
         glEnd();
 
-        setColor();
         glBegin(GL_QUADS);		// Draw The Cube Using quads
+        setColor();
+        //glNormal3f(0.0f,0.0f,1.0f);
+        glNormal3f((GLfloat)normal.getX(),(GLfloat)normal.getY(),(GLfloat)normal.getZ());
         glVertex3f(x+size, y+size, z+size);	// Top Right Of The Quad (Front)
         glVertex3f(x-size, y+size, z+size);	// Top Left Of The Quad (Front)
         glVertex3f(x-size, y-size, z+size);	// Bottom Left Of The Quad (Front)

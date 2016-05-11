@@ -79,7 +79,7 @@ void setLight() {
 	glLightfv(GL_LIGHT0, GL_SPECULAR, qaSpecularLight);
 
 	// Set the light position
-	GLfloat qaLightPosition[]	= {.5, .5, 0.0, 1.0};
+	GLfloat qaLightPosition[]	= {0.5, 0.5, 0.0, 0.0};
 	glLightfv(GL_LIGHT0, GL_POSITION, qaLightPosition);
 }
 
