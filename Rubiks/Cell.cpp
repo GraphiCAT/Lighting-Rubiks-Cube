@@ -2,6 +2,7 @@
 #include <windows.h>  // for MS Windows
 #include <GL/glut.h>  // GLUT, include glu.h and gl.h
 
+
 Cell::Cell(const Cell& c){
     color = c.color;
     location = c.location;
@@ -114,6 +115,8 @@ void Cell::drawCell() {
     float z = location.getZ()*2.25;
     GLfloat clBlack[] = {0.0, 0.0, 0.0, 1.0};
 
+
+  //glLightfv(GL_LIGHT0, GL_POSITION, qaLightPosition);
 
     glBegin(GL_QUADS);		// Draw The Cube Using quads
     glNormal3f((GLfloat)normal.getX(),(GLfloat)normal.getY(),(GLfloat)normal.getZ());

@@ -23,7 +23,7 @@
 using namespace std;
 
 bool Cube::solve = false;
-GLfloat qaLightPosition[]	= {.5, .5, 0.0, 1.0};
+GLfloat qaLightPosition[]	= {.5, .5, 0.0, 0.0};
 
 Cube::Cube() {
     Point3D top(0,-1,0);
@@ -142,6 +142,7 @@ void Cube::rotateAll(int axis, int direction) {
 void Cube::rotateByAxis(GLfloat angle, int axis) {
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT); // Clear color and depth buffers
 
+
   switch (axis) {
     case ALLX:
       glRotatef(angle,1.0f,0.0f,0.0f);
@@ -155,7 +156,7 @@ void Cube::rotateByAxis(GLfloat angle, int axis) {
     default:
       break;
   }
-  //glLightfv(GL_LIGHT0, GL_POSITION, qaLightPosition);
+  glLightfv(GL_LIGHT0, GL_POSITION, qaLightPosition);
   drawCube();
   glutSwapBuffers();
 }

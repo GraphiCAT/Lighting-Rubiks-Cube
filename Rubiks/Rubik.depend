@@ -678,9 +678,13 @@
 	<vector>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 1462956128 f:\itb\semester_6\if3260 grafika komputer\lighting-rubiks-cube\rubiks\drawhandler.h
 =======
 1462974265 source:c:\users\asus x202e\documents\github\lighting-rubiks-cube\rubiks\cell.cpp
+=======
+1462975833 source:c:\users\asus x202e\documents\github\lighting-rubiks-cube\rubiks\cell.cpp
+>>>>>>> 4e2482938272d144a8a76bc69b4fdd395b9356ef
 	"Cell.h"
 	<windows.h>
 	<GL/glut.h>
@@ -693,7 +697,7 @@
 
 1462967025 c:\users\asus x202e\documents\github\lighting-rubiks-cube\rubiks\point3d.h
 
-1462974317 source:c:\users\asus x202e\documents\github\lighting-rubiks-cube\rubiks\cube.cpp
+1462975735 source:c:\users\asus x202e\documents\github\lighting-rubiks-cube\rubiks\cube.cpp
 	"Cube.h"
 	<windows.h>
 	<iostream>
