@@ -585,3 +585,65 @@
 
 1461499649 d:\tifani warnita\schools - college\itb\hmif itb\informatics engineering\6th semester\if3260 - computer graphics\assignments\rubik-s-cube\rubik\soil\soil.h
 
+1462956128 source:f:\itb\semester_6\if3260 grafika komputer\lighting-rubiks-cube\rubiks\cell.cpp
+	"Cell.h"
+	<windows.h>
+	<GL/glut.h>
+
+1462956128 f:\itb\semester_6\if3260 grafika komputer\lighting-rubiks-cube\rubiks\cell.h
+	"Point3D.h"
+	<windows.h>
+	<GL/glut.h>
+	<stdio.h>
+
+1462956128 f:\itb\semester_6\if3260 grafika komputer\lighting-rubiks-cube\rubiks\point3d.h
+
+1462956128 source:f:\itb\semester_6\if3260 grafika komputer\lighting-rubiks-cube\rubiks\cube.cpp
+	"Cube.h"
+	<windows.h>
+	<iostream>
+	<vector>
+	<algorithm>
+
+1462956128 f:\itb\semester_6\if3260 grafika komputer\lighting-rubiks-cube\rubiks\cube.h
+	"Point3D.h"
+	"Cell.h"
+	<vector>
+	<GL/glut.h>
+
+1462956128 source:f:\itb\semester_6\if3260 grafika komputer\lighting-rubiks-cube\rubiks\cube5.cpp
+	"Cube5.h"
+	<iostream>
+	<vector>
+	<algorithm>
+
+1462956128 f:\itb\semester_6\if3260 grafika komputer\lighting-rubiks-cube\rubiks\cube5.h
+	"Point3D.h"
+	"Cell.h"
+	<vector>
+	<GL/glut.h>
+
+1462956128 source:f:\itb\semester_6\if3260 grafika komputer\lighting-rubiks-cube\rubiks\drawhandler.cpp
+	"DrawHandler.h"
+	"Point3D.h"
+	"Cell.h"
+	"Cube.h"
+	"Cube5.h"
+	<vector>
+
+1462956128 f:\itb\semester_6\if3260 grafika komputer\lighting-rubiks-cube\rubiks\drawhandler.h
+	<iostream>
+	<windows.h>
+	<GL/glut.h>
+
+1462956128 source:f:\itb\semester_6\if3260 grafika komputer\lighting-rubiks-cube\rubiks\main.cpp
+	<cstdlib>
+	<windows.h>
+	<GL/glut.h>
+	"DrawHandler.h"
+	"Cell.h"
+	<iostream>
+
+1462956128 source:f:\itb\semester_6\if3260 grafika komputer\lighting-rubiks-cube\rubiks\point3d.cpp
+	"Point3D.h"
+

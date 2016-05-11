@@ -78,6 +78,7 @@ void displayCube() {
 	glLightfv(GL_LIGHT0, GL_POSITION, qaLightPosition);
 
 	rubiks.drawCube();
+
     glFlush();
 }
 
