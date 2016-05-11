@@ -23,6 +23,7 @@
 using namespace std;
 
 bool Cube::solve = false;
+GLfloat qaLightPosition[]	= {.5, .5, 0.0, 1.0};
 
 Cube::Cube() {
     Point3D top(0,-1,0);
@@ -154,8 +155,8 @@ void Cube::rotateByAxis(GLfloat angle, int axis) {
     default:
       break;
   }
+  glLightfv(GL_LIGHT0, GL_POSITION, qaLightPosition);
   drawCube();
-
   glutSwapBuffers();
 }
 
@@ -295,14 +296,13 @@ void Cube::rotateSlice(GLfloat angle, vector<int> rotate, Point3D axis) {
     glPushMatrix();
     //Rotate around axis
     glRotatef(angle,(GLfloat)axis.getX(),(GLfloat)axis.getY(),(GLfloat)axis.getZ());
+    glLightfv(GL_LIGHT0, GL_POSITION, qaLightPosition);
 
     //Draw rotated
     for (int i = 0; i < rotate.size(); i++) {
         surface[rotate.at(i)].drawCell();
     }
-
     glPopMatrix();
-
     glutSwapBuffers();
 }
 

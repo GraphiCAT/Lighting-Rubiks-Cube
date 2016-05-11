@@ -26,6 +26,7 @@ void keyPressed(unsigned char key, int x, int y);
 void keyPressed5(unsigned char key, int x, int y);
 void mouse(int btn, int state, int x, int y);
 void toggleDirection();
+void setLight();
 
 void printLogo();
 void printMenu();
