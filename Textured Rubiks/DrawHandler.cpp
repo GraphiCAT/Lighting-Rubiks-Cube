@@ -57,17 +57,45 @@ void init()
 }
 
 void displayCube() {
-   glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT); // Clear color and depth buffers
-   glMatrixMode(GL_MODELVIEW);     // To operate on model-view matrix
-   rubiks.drawCube();
-   glFlush();
+    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT); // Clear color and depth buffers
+    glMatrixMode(GL_MODELVIEW);     // To operate on model-view matrix
+
+    // Lighting set
+	glLightModeli(GL_LIGHT_MODEL_LOCAL_VIEWER, GL_TRUE);
+	glEnable(GL_LIGHTING);
+	glEnable(GL_LIGHT0);
+
+    rubiks.drawCube();
+    glFlush();
 }
 
 void displayCube5() {
-  glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT); // Clear color and depth buffers
-  glMatrixMode(GL_MODELVIEW);     // To operate on model-view matrix
-  rubiks5.drawCube();
-  glFlush();
+    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT); // Clear color and depth buffers
+    glMatrixMode(GL_MODELVIEW);     // To operate on model-view matrix
+
+    // Lighting set
+	glLightModeli(GL_LIGHT_MODEL_LOCAL_VIEWER, GL_TRUE);
+	glEnable(GL_LIGHTING);
+	glEnable(GL_LIGHT0);
+
+    rubiks5.drawCube();
+    glFlush();
+}
+
+void setLight(float x, float y, float z) {
+	// Set lighting intensity and color
+	GLfloat qaAmbientLight[]	= {0.2, 0.2, 0.2, 1.0};
+	GLfloat qaDiffuseLight[]	= {0.8, 0.8, 0.8, 1.0};
+	GLfloat qaSpecularLight[]	= {1.0, 1.0, 1.0, 1.0};
+	glLightfv(GL_LIGHT0, GL_AMBIENT, qaAmbientLight);
+	glLightfv(GL_LIGHT0, GL_DIFFUSE, qaDiffuseLight);
+	glLightfv(GL_LIGHT0, GL_SPECULAR, qaSpecularLight);
+
+	// Set the light position
+	GLfloat qaLightPosition[]	= {x, y, z, 0.0};
+	glLightfv(GL_LIGHT0, GL_POSITION, qaLightPosition);
+
+	glFlush();
 }
 
 void keyPressed (unsigned char key, int x, int y) {
@@ -104,6 +132,8 @@ void keyPressed (unsigned char key, int x, int y) {
     default:
       break;
   }
+    setLight(0.5, 0.5, 0.0);
+    setLight(-0.5, 0.5, 0.0);
 }
 
 void keyPressed5 (unsigned char key, int x, int y) {
@@ -138,6 +168,8 @@ void keyPressed5 (unsigned char key, int x, int y) {
     default:
       break;
   }
+    setLight(0.5, 0.5, 0.0);
+    setLight(-0.5, 0.5, 0.0);
 }
 
 void toggleDirection() {

@@ -651,7 +651,7 @@
 
 1460796180 d:\tifani warnita\schools - college\itb\hmif itb\informatics engineering\6th semester\if3260 - computer graphics\assignments\lighting-rubiks-cube\rubiks\point3d.h
 
-1463017004 source:d:\tifani warnita\schools - college\itb\hmif itb\informatics engineering\6th semester\if3260 - computer graphics\assignments\lighting-rubiks-cube\rubiks\cube.cpp
+1463018023 source:d:\tifani warnita\schools - college\itb\hmif itb\informatics engineering\6th semester\if3260 - computer graphics\assignments\lighting-rubiks-cube\rubiks\cube.cpp
 	"Cube.h"
 	<windows.h>
 	<iostream>
@@ -668,7 +668,7 @@
 	<vector>
 	<algorithm>
 
-1463016810 source:d:\tifani warnita\schools - college\itb\hmif itb\informatics engineering\6th semester\if3260 - computer graphics\assignments\lighting-rubiks-cube\rubiks\cube5.cpp
+1463018096 source:d:\tifani warnita\schools - college\itb\hmif itb\informatics engineering\6th semester\if3260 - computer graphics\assignments\lighting-rubiks-cube\rubiks\cube5.cpp
 	"Cube5.h"
 	<iostream>
 	<vector>
@@ -686,7 +686,7 @@
 	"Cube5.h"
 	<vector>
 
-1462952834 source:d:\tifani warnita\schools - college\itb\hmif itb\informatics engineering\6th semester\if3260 - computer graphics\assignments\lighting-rubiks-cube\rubiks\main.cpp
+1463017987 source:d:\tifani warnita\schools - college\itb\hmif itb\informatics engineering\6th semester\if3260 - computer graphics\assignments\lighting-rubiks-cube\rubiks\main.cpp
 	<cstdlib>
 	<windows.h>
 	<GL/glut.h>
@@ -702,7 +702,7 @@
 1460796180 source:d:\tifani warnita\schools - college\itb\hmif itb\informatics engineering\6th semester\if3260 - computer graphics\assignments\lighting-rubiks-cube\rubiks\point3d.cpp
 	"Point3D.h"
 
-1463016787 source:d:\tifani warnita\schools - college\itb\hmif itb\informatics engineering\6th semester\if3260 - computer graphics\assignments\lighting-rubiks-cube\rubiks\drawhandler.cpp
+1463018092 source:d:\tifani warnita\schools - college\itb\hmif itb\informatics engineering\6th semester\if3260 - computer graphics\assignments\lighting-rubiks-cube\rubiks\drawhandler.cpp
 	"DrawHandler.h"
 	"Point3D.h"
 	"Cell.h"
