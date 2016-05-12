@@ -108,41 +108,41 @@ void displayCube5() {
 void keyPressed (unsigned char key, int x, int y) {
     Sleep(100);
     switch (key) {
-    case 'b': rubiks.handleRotate(BACK,direction);
-      break;
-    case 'f': rubiks.handleRotate(FRONT,direction);
-      break;
-    case 'o': rubiks.handleRotate(BOTTOM,direction);
-      break;
-    case 't': rubiks.handleRotate(TOP,direction);
-      break;
-    case 'l': rubiks.handleRotate(LEFT,direction);
-      break;
-    case 'r': rubiks.handleRotate(RIGHT,direction);
-      break;
-    case 'x': rubiks.handleRotate(MIDDLEX,direction);
-      break;
-    case 'y': rubiks.handleRotate(MIDDLEY,direction);
-      break;
-    case 'z': rubiks.handleRotate(MIDDLEZ,direction);
-      break;
-    case 'c': toggleDirection();
-      break;
-    case 'X': rubiks.rotateAll(ALLX,direction);
-      break;
-    case 'Y': rubiks.rotateAll(ALLY,direction);
-      break;
-    case 'Z': rubiks.rotateAll(ALLZ,direction);
-      break;
-    case 's': rubiks.autoSolve();
-      break;
-    case 'q':
-        rubiks.switchMaterials();
-        glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT); // Clear color and depth buffers
-        rubiks.drawCube();
-      break;
-    default:
-      break;
+        case 'b': rubiks.handleRotate(BACK,direction);
+          break;
+        case 'f': rubiks.handleRotate(FRONT,direction);
+          break;
+        case 'o': rubiks.handleRotate(BOTTOM,direction);
+          break;
+        case 't': rubiks.handleRotate(TOP,direction);
+          break;
+        case 'l': rubiks.handleRotate(LEFT,direction);
+          break;
+        case 'r': rubiks.handleRotate(RIGHT,direction);
+          break;
+        case 'x': rubiks.handleRotate(MIDDLEX,direction);
+          break;
+        case 'y': rubiks.handleRotate(MIDDLEY,direction);
+          break;
+        case 'z': rubiks.handleRotate(MIDDLEZ,direction);
+          break;
+        case 'c': toggleDirection();
+          break;
+        case 'X': rubiks.rotateAll(ALLX,direction);
+          break;
+        case 'Y': rubiks.rotateAll(ALLY,direction);
+          break;
+        case 'Z': rubiks.rotateAll(ALLZ,direction);
+          break;
+        case 's': rubiks.autoSolve();
+          break;
+        case 'q':
+            rubiks.switchMaterials();
+            glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT); // Clear color and depth buffers
+            rubiks.drawCube();
+          break;
+        default:
+          break;
     }
     setLight(light1.getX(),light1.getY(),light1.getZ());
     setLight(light2.getX(),light2.getY(),light2.getZ());
@@ -151,39 +151,39 @@ void keyPressed (unsigned char key, int x, int y) {
 void keyPressed5 (unsigned char key, int x, int y) {
     Sleep(100);
     switch (key) {
-    case 'b': rubiks5.handleRotate(BACK,direction);
-      break;
-    case 'f': rubiks5.handleRotate(FRONT,direction);
-      break;
-    case 'o': rubiks5.handleRotate(BOTTOM,direction);
-      break;
-    case 't': rubiks5.handleRotate(TOP,direction);
-      break;
-    case 'l': rubiks5.handleRotate(LEFT,direction);
-      break;
-    case 'r': rubiks5.handleRotate(RIGHT,direction);
-      break;
-    case 'x': rubiks5.handleRotate(MIDDLEX,direction);
-      break;
-    case 'y': rubiks5.handleRotate(MIDDLEY,direction);
-      break;
-    case 'z': rubiks5.handleRotate(MIDDLEZ,direction);
-      break;
-    case 'c': toggleDirection();
-      break;
-    case 'X': rubiks5.rotateAll(ALLX,direction);
-      break;
-    case 'Y': rubiks5.rotateAll(ALLY,direction);
-      break;
-    case 'Z': rubiks5.rotateAll(ALLZ,direction);
-      break;
-    case 'q':
-        rubiks5.switchMaterials();
-        glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT); // Clear color and depth buffers
-        rubiks5.drawCube();
-      break;
-    default:
-      break;
+        case 'b': rubiks5.handleRotate(BACK,direction);
+          break;
+        case 'f': rubiks5.handleRotate(FRONT,direction);
+          break;
+        case 'o': rubiks5.handleRotate(BOTTOM,direction);
+          break;
+        case 't': rubiks5.handleRotate(TOP,direction);
+          break;
+        case 'l': rubiks5.handleRotate(LEFT,direction);
+          break;
+        case 'r': rubiks5.handleRotate(RIGHT,direction);
+          break;
+        case 'x': rubiks5.handleRotate(MIDDLEX,direction);
+          break;
+        case 'y': rubiks5.handleRotate(MIDDLEY,direction);
+          break;
+        case 'z': rubiks5.handleRotate(MIDDLEZ,direction);
+          break;
+        case 'c': toggleDirection();
+          break;
+        case 'X': rubiks5.rotateAll(ALLX,direction);
+          break;
+        case 'Y': rubiks5.rotateAll(ALLY,direction);
+          break;
+        case 'Z': rubiks5.rotateAll(ALLZ,direction);
+          break;
+        case 'q':
+            rubiks5.switchMaterials();
+            glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT); // Clear color and depth buffers
+            rubiks5.drawCube();
+          break;
+        default:
+          break;
     }
     setLight(light1.getX(),light1.getY(),light1.getZ());
     setLight(light2.getX(),light2.getY(),light2.getZ());
@@ -196,16 +196,79 @@ void toggleDirection() {
     direction = CLOCKWISE;
 }
 
+int xTemp;
+int yTemp;
 
-void mouse(int btn, int state, int x, int y)
-  {
-    if (state == GLUT_DOWN)
-    {
-      if (btn == GLUT_LEFT_BUTTON);
+void mouse(int button, int state, int x, int y) {
 
-      else if (btn == GLUT_RIGHT_BUTTON);
+    // Wheel reports as button 3(scroll up) and button 4(scroll down)
+   if ((button == 3) || (button == 4)) // It's a wheel event
+   {
+       // Each wheel event reports like a button click, GLUT_DOWN then GLUT_UP
+       if (state == GLUT_UP) return; // Disregard redundant GLUT_UP events
+       if (button == 3) {
+            rubiks.handleRotate(LEFT,COUNTER_CLOCKWISE);
+       } else {
+            rubiks.handleRotate(LEFT,CLOCKWISE);
+       }
+   } else {  // normal button event
+       if (state == GLUT_DOWN) {
+            xTemp = x;
+            yTemp = y;
+       } else {
+            int xTemp2 = x;
+            int yTemp2 = y;
+            if (abs(yTemp2 - yTemp)<20) {
+                if (xTemp2 >= xTemp) {
+                    rubiks.handleRotate(TOP,COUNTER_CLOCKWISE);
+                } else {
+                    rubiks.handleRotate(TOP,CLOCKWISE);
+                }
+            } else {
+                if (yTemp2 >= yTemp) {
+                    rubiks.handleRotate(FRONT,COUNTER_CLOCKWISE);
+                } else {
+                    rubiks.handleRotate(FRONT,CLOCKWISE);
+                }
+            }
+       }
+   }
+}
 
-  }
+void mouse5(int button, int state, int x, int y) {
+    // Wheel reports as button 3(scroll up) and button 4(scroll down)
+   if ((button == 3) || (button == 4)) // It's a wheel event
+   {
+       // Each wheel event reports like a button click, GLUT_DOWN then GLUT_UP
+       if (state == GLUT_UP) return; // Disregard redundant GLUT_UP events
+       if (button == 3) {
+            rubiks5.handleRotate(LEFT,COUNTER_CLOCKWISE);
+       } else {
+            rubiks5.handleRotate(LEFT,CLOCKWISE);
+       }
+   } else {  // normal button event
+       if (state == GLUT_DOWN) {
+            xTemp = x;
+            yTemp = y;
+       } else {
+            int xTemp2 = x;
+            int yTemp2 = y;
+            if (abs(yTemp2 - yTemp)<20) {
+                if (xTemp2 >= xTemp) {
+                    rubiks5.handleRotate(TOP,COUNTER_CLOCKWISE);
+                } else {
+                    rubiks5.handleRotate(TOP,CLOCKWISE);
+                }
+            } else {
+                if (yTemp2 >= yTemp) {
+                    rubiks5.handleRotate(FRONT,COUNTER_CLOCKWISE);
+                } else {
+                    rubiks5.handleRotate(FRONT,CLOCKWISE);
+                }
+            }
+       }
+       return;
+   }
 }
 
 /* Called back when timer expired [NEW] */

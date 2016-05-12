@@ -691,7 +691,7 @@
 	<vector>
 	<GL/glut.h>
 
-1463018804 source:f:\itb\semester_6\if3260 grafika komputer\lighting-rubiks-cube\rubiks\drawhandler.cpp
+1463021526 source:f:\itb\semester_6\if3260 grafika komputer\lighting-rubiks-cube\rubiks\drawhandler.cpp
 	"DrawHandler.h"
 	"Point3D.h"
 	"Cell.h"
@@ -723,7 +723,7 @@
 	"Cube5.h"
 	<vector>
 
-1462977284 f:\itb\semester_6\if3260 grafika komputer\lighting-rubiks-cube\rubiks\drawhandler.h
+1463020444 f:\itb\semester_6\if3260 grafika komputer\lighting-rubiks-cube\rubiks\drawhandler.h
 	<iostream>
 	<windows.h>
 	<GL/glut.h>
@@ -778,7 +778,7 @@
 
 1462967025 c:\users\asus x202e\documents\github\lighting-rubiks-cube\rubiks\drawhandler.h
 
-1463017833 source:f:\itb\semester_6\if3260 grafika komputer\lighting-rubiks-cube\rubiks\main.cpp
+1463020131 source:f:\itb\semester_6\if3260 grafika komputer\lighting-rubiks-cube\rubiks\main.cpp
 	<cstdlib>
 	<windows.h>
 	<GL/glut.h>
