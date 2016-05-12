@@ -136,6 +136,11 @@ void keyPressed (unsigned char key, int x, int y) {
       break;
     case 's': rubiks.autoSolve();
       break;
+    case 'q':
+        rubiks.switchMaterials();
+        glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT); // Clear color and depth buffers
+        rubiks.drawCube();
+      break;
     default:
       break;
     }
@@ -170,7 +175,12 @@ void keyPressed5 (unsigned char key, int x, int y) {
       break;
     case 'Y': rubiks5.rotateAll(ALLY,direction);
       break;
-    case 'Z': rubiks.rotateAll(ALLZ,direction);
+    case 'Z': rubiks5.rotateAll(ALLZ,direction);
+      break;
+    case 'q':
+        rubiks5.switchMaterials();
+        glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT); // Clear color and depth buffers
+        rubiks5.drawCube();
       break;
     default:
       break;
@@ -327,6 +337,8 @@ void printMenu() {
     std::cout << "Control" << std::endl;
     std::cout << "1: Start playing (3x3)" << std::endl;
     std::cout << "2: Start playing (5x5)" << std::endl;
+    std::cout << "s: Solve rubiks" << std::endl;
+    std::cout << "q: Switch plain colours/textures" << std::endl;
     std::cout << "f: Rotate front" << std::endl;
     std::cout << "b: Rotate back" << std::endl;
     std::cout << "r: Rotate right" << std::endl;

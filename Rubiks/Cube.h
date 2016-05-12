@@ -18,7 +18,7 @@ class Cube
         void handleRotate(int face, int direction);
         void rotateAll(int axis, int direction);
         void autoSolve();
-
+        static void switchMaterials();
 
     private :
         void rotateSlice(GLfloat angle,std::vector<int> rotate, Point3D axis);
@@ -30,7 +30,7 @@ class Cube
         std::vector<int> faceHistory;
         std::vector<int> directionHistory;
         static bool solve;
-
+        static bool isTextured;
 };
 
 #endif // Cube_H

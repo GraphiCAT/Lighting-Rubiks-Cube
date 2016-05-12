@@ -27,8 +27,9 @@ class Cell
         void setLocation(Point3D _location);
         Point3D getNormal();
         void setNormal(Point3D _normal);
-        void drawCell();
+        void drawCell(bool isTextured);
         void setColor();
+        void setTexture();
         int getFace();
         static void initTexture();
         static GLuint LoadTextureRAW( const char * filename, int wrap );
