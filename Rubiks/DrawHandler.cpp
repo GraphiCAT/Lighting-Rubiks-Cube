@@ -32,6 +32,8 @@ int refreshMills = 15;        // refresh interval in milliseconds [NEW]
 int iteration = 1;
 float angle = 0.0f;
 int direction = CLOCKWISE;
+Point3D light1(0.5,0.5,0);
+Point3D light2(-0.5,0.5,0);
 
 /* Initialize OpenGL Graphics */
 void initGL() {
@@ -44,6 +46,15 @@ void initGL() {
     glMatrixMode(GL_MODELVIEW);
     glTranslatef(0.0f, 0.0f, -20.0f);
     glRotatef(45.0f,1.0f,1.0f,0.0f);
+
+    // Lighting set
+    glLightModeli(GL_LIGHT_MODEL_LOCAL_VIEWER, GL_TRUE);
+    glEnable(GL_LIGHTING);
+    glEnable(GL_LIGHT0);
+
+    setLight(light1.getX(),light1.getY(),light1.getZ());
+    setLight(light2.getX(),light2.getY(),light2.getZ());
+
 }
 
 void init()
@@ -60,12 +71,10 @@ void displayCube() {
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT); // Clear color and depth buffers
     glMatrixMode(GL_MODELVIEW);     // To operate on model-view matrix
 
-    // Lighting set
-	glLightModeli(GL_LIGHT_MODEL_LOCAL_VIEWER, GL_TRUE);
-	glEnable(GL_LIGHTING);
-	glEnable(GL_LIGHT0);
-
 	rubiks.drawCube();
+
+    setLight(light1.getX(),light1.getY(),light1.getZ());
+    setLight(light2.getX(),light2.getY(),light2.getZ());
     glFlush();
 }
 
@@ -86,16 +95,14 @@ void setLight(float x, float y, float z) {
 }
 
 void displayCube5() {
-  glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT); // Clear color and depth buffers
-  glMatrixMode(GL_MODELVIEW);     // To operate on model-view matrix
+    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT); // Clear color and depth buffers
+    glMatrixMode(GL_MODELVIEW);     // To operate on model-view matrix
 
-  // Lighting set
-  glLightModeli(GL_LIGHT_MODEL_LOCAL_VIEWER, GL_TRUE);
-  glEnable(GL_LIGHTING);
-  glEnable(GL_LIGHT0);
+    rubiks5.drawCube();
 
-  rubiks5.drawCube();
-  glFlush();
+    setLight(light1.getX(),light1.getY(),light1.getZ());
+    setLight(light2.getX(),light2.getY(),light2.getZ());
+    glFlush();
 }
 
 void keyPressed (unsigned char key, int x, int y) {
@@ -132,9 +139,8 @@ void keyPressed (unsigned char key, int x, int y) {
     default:
       break;
     }
-
-    setLight(0.5, 0.5, 0.0);
-    setLight(-0.5, 0.5, 0.0);
+    setLight(light1.getX(),light1.getY(),light1.getZ());
+    setLight(light2.getX(),light2.getY(),light2.getZ());
 }
 
 void keyPressed5 (unsigned char key, int x, int y) {
@@ -169,8 +175,8 @@ void keyPressed5 (unsigned char key, int x, int y) {
     default:
       break;
     }
-    setLight(0.5, 0.5, 0.0);
-    setLight(-0.5, 0.5, 0.0);
+    setLight(light1.getX(),light1.getY(),light1.getZ());
+    setLight(light2.getX(),light2.getY(),light2.getZ());
 }
 
 void toggleDirection() {
