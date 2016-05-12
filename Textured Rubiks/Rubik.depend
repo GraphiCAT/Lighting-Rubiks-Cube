@@ -9,7 +9,7 @@
 
 1460790974 f:\itb\semester_6\if3260 grafika komputer\rubik-s-cube\rubik\point3d.h
 
-1460952950 source:f:\itb\semester_6\if3260 grafika komputer\rubik-s-cube\rubik\main.cpp
+1460959859 source:f:\itb\semester_6\if3260 grafika komputer\rubik-s-cube\rubik\main.cpp
 	<cstdlib>
 	<windows.h>
 	<GL/glut.h>
@@ -32,7 +32,7 @@
 1460783967 source:f:\itb\semester_6\if3260 grafika komputer\rubik-s-cube\rubik\point3d.cpp
 	"Point3D.h"
 
-1460952908 source:f:\itb\semester_6\if3260 grafika komputer\rubik-s-cube\rubik\drawhandler.cpp
+1460960548 source:f:\itb\semester_6\if3260 grafika komputer\rubik-s-cube\rubik\drawhandler.cpp
 	"DrawHandler.h"
 	"Point3D.h"
 	"Cell.h"
@@ -40,28 +40,30 @@
 	"Cube5.h"
 	<vector>
 
-1460952921 f:\itb\semester_6\if3260 grafika komputer\rubik-s-cube\rubik\drawhandler.h
+1460959514 f:\itb\semester_6\if3260 grafika komputer\rubik-s-cube\rubik\drawhandler.h
 	<iostream>
 	<windows.h>
 	<GL/glut.h>
 
-1460949687 source:f:\itb\semester_6\if3260 grafika komputer\rubik-s-cube\rubik\cube.cpp
+1460959514 source:f:\itb\semester_6\if3260 grafika komputer\rubik-s-cube\rubik\cube.cpp
 	"Cube.h"
 	<windows.h>
 	<iostream>
 	<vector>
 	<algorithm>
 
-1460947702 f:\itb\semester_6\if3260 grafika komputer\rubik-s-cube\rubik\cube.h
+1460959514 f:\itb\semester_6\if3260 grafika komputer\rubik-s-cube\rubik\cube.h
 	"Point3D.h"
 	"Cell.h"
 	<vector>
 	<GL/glut.h>
 
-1462955470 source:d:\tifani warnita\schools - college\itb\hmif itb\informatics engineering\6th semester\if3260 - computer graphics\assignments\rubik-s-cube\rubik\cell.cpp
+1461569901 source:d:\tifani warnita\schools - college\itb\hmif itb\informatics engineering\6th semester\if3260 - computer graphics\assignments\rubik-s-cube\rubik\cell.cpp
 	"Cell.h"
 	<windows.h>
 	<GL/glut.h>
+	<iostream>
+	"soil/SOIL.h"
 
 1460796586 c:\users\asus x202e\documents\github\rubik-s-cube\rubik\cell.h
 	"Point3D.h"
@@ -315,7 +317,7 @@
 	<GL/glut.h>
 	"DrawHandler.h"
 
-1462967025 D
+1460950928 D
 	<vector>
 
 1301111164 c:\program files (x86)\codeblocks\mingw\include\gl\gl.h
@@ -369,7 +371,7 @@
 1460796180 d:\tifani warnita\schools - college\itb\hmif itb\informatics engineering\6th semester\if3260 - computer graphics\assignments\rubik-s-cube\rubik\cubelet.h
 	"Point3D.h"
 
-1462955293 source:d:\tifani warnita\schools - college\itb\hmif itb\informatics engineering\6th semester\if3260 - computer graphics\assignments\rubik-s-cube\rubik\drawhandler.cpp
+1461550495 source:d:\tifani warnita\schools - college\itb\hmif itb\informatics engineering\6th semester\if3260 - computer graphics\assignments\rubik-s-cube\rubik\drawhandler.cpp
 	"DrawHandler.h"
 	"Point3D.h"
 	"Cell.h"
@@ -393,7 +395,7 @@
 	<GL/glut.h>
 	"DrawHandler.h"
 
-1462952834 source:d:\tifani warnita\schools - college\itb\hmif itb\informatics engineering\6th semester\if3260 - computer graphics\assignments\rubik-s-cube\rubik\main.cpp
+1461568964 source:d:\tifani warnita\schools - college\itb\hmif itb\informatics engineering\6th semester\if3260 - computer graphics\assignments\rubik-s-cube\rubik\main.cpp
 	<cstdlib>
 	<windows.h>
 	<GL/glut.h>
@@ -442,13 +444,17 @@
 
 1460957515 c:\users\asus x202e\documents\github\rubik\rubik-s-cube\rubik\cube.h
 
-1460952531 source:f:\itb\semester_6\if3260 grafika komputer\rubik-s-cube\rubik\cube5.cpp
+1460964277 source:f:\itb\semester_6\if3260 grafika komputer\rubik-s-cube\rubik\cube5.cpp
 	"Cube5.h"
 	<iostream>
 	<vector>
 	<algorithm>
 
-1460950928 f:\itb\semester_6\if3260 grafika komputer\rubik-s-cube\rubik\cube5.h
+1460962428 f:\itb\semester_6\if3260 grafika komputer\rubik-s-cube\rubik\cube5.h
+	"Point3D.h"
+	"Cell.h"
+	<vector>
+	<GL/glut.h>
 
 1460954283 877c9b3492d7a46cd1396f57d29f44a1e18cf
 	"Point3D.h"
@@ -480,25 +486,25 @@
 	<vector>
 	<GL/glut.h>
 
-1462952711 source:d:\tifani warnita\schools - college\itb\hmif itb\informatics engineering\6th semester\if3260 - computer graphics\assignments\rubik-s-cube\rubik\cube5.cpp
+1461502067 source:d:\tifani warnita\schools - college\itb\hmif itb\informatics engineering\6th semester\if3260 - computer graphics\assignments\rubik-s-cube\rubik\cube5.cpp
 	"Cube5.h"
 	<iostream>
 	<vector>
 	<algorithm>
 
-1462952711 d:\tifani warnita\schools - college\itb\hmif itb\informatics engineering\6th semester\if3260 - computer graphics\assignments\rubik-s-cube\rubik\cube5.h
+1461502067 d:\tifani warnita\schools - college\itb\hmif itb\informatics engineering\6th semester\if3260 - computer graphics\assignments\rubik-s-cube\rubik\cube5.h
 	"Point3D.h"
 	"Cell.h"
 	<vector>
 	<GL/glut.h>
 
-1341010376 c:\program files (x86)\codeblocks\mingw\include\stdio.h
+1341006776 c:\program files (x86)\codeblocks\mingw\include\stdio.h
 	<_mingw.h>
 	<stddef.h>
 	<stdarg.h>
 	<sys/types.h>
 
-1341010380 c:\program files (x86)\codeblocks\mingw\include\sys\types.h
+1341006780 c:\program files (x86)\codeblocks\mingw\include\sys\types.h
 	<_mingw.h>
 	<stddef.h>
 
@@ -511,7 +517,7 @@
 
 1215429208 d:\tifani warnita\schools - college\itb\hmif itb\informatics engineering\6th semester\if3260 - computer graphics\assignments\soil\simple opengl image library\src\image_dxt.h
 
-1341010374 c:\program files (x86)\codeblocks\mingw\include\math.h
+1341006774 c:\program files (x86)\codeblocks\mingw\include\math.h
 	<_mingw.h>
 
 1215429208 source:d:\tifani warnita\schools - college\itb\hmif itb\informatics engineering\6th semester\if3260 - computer graphics\assignments\soil\simple opengl image library\src\image_helper.c
@@ -531,10 +537,10 @@
 	<assert.h>
 	<stdarg.h>
 
-1341010374 c:\program files (x86)\codeblocks\mingw\include\memory.h
+1341006774 c:\program files (x86)\codeblocks\mingw\include\memory.h
 	<string.h>
 
-1341010370 c:\program files (x86)\codeblocks\mingw\include\assert.h
+1341006770 c:\program files (x86)\codeblocks\mingw\include\assert.h
 	<_mingw.h>
 
 1215429208 source:d:\tifani warnita\schools - college\itb\hmif itb\informatics engineering\6th semester\if3260 - computer graphics\assignments\soil\simple opengl image library\src\original\stb_image-1.16.c
@@ -585,50 +591,62 @@
 
 1461499649 d:\tifani warnita\schools - college\itb\hmif itb\informatics engineering\6th semester\if3260 - computer graphics\assignments\rubik-s-cube\rubik\soil\soil.h
 
-1463018397 source:f:\itb\semester_6\if3260 grafika komputer\lighting-rubiks-cube\rubiks\cell.cpp
+1461569901 source:d:\tifani warnita\schools - college\itb\hmif itb\informatics engineering\6th semester\if3260 - computer graphics\assignments\lighting-rubiks-cube\textured rubiks\cell.cpp
 	"Cell.h"
 	<windows.h>
 	<GL/glut.h>
+	<iostream>
+	"soil/SOIL.h"
 
-1463016509 source:d:\tifani warnita\schools - college\itb\hmif itb\informatics engineering\6th semester\if3260 - computer graphics\assignments\lighting-rubiks-cube\rubiks\cell.cpp
-	"Cell.h"
-	<windows.h>
-	<GL/glut.h>
-
-1462967025 b55c7aa3ae806f6c5d55943436df33f26e981
-	"Cell.h"
-	<windows.h>
-	<GL/glut.h>
+1461568998 d:\tifani warnita\schools - college\itb\hmif itb\informatics engineering\6th semester\if3260 - computer graphics\assignments\lighting-rubiks-cube\textured rubiks\cell.h
 	"Point3D.h"
 	<windows.h>
 	<GL/glut.h>
 	<stdio.h>
+
+1460796180 d:\tifani warnita\schools - college\itb\hmif itb\informatics engineering\6th semester\if3260 - computer graphics\assignments\lighting-rubiks-cube\textured rubiks\point3d.h
+
+1461499649 d:\tifani warnita\schools - college\itb\hmif itb\informatics engineering\6th semester\if3260 - computer graphics\assignments\lighting-rubiks-cube\textured rubiks\soil\soil.h
+
+1461502236 source:d:\tifani warnita\schools - college\itb\hmif itb\informatics engineering\6th semester\if3260 - computer graphics\assignments\lighting-rubiks-cube\textured rubiks\cube.cpp
 	"Cube.h"
 	<windows.h>
 	<iostream>
 	<vector>
 	<algorithm>
+
+1461502216 d:\tifani warnita\schools - college\itb\hmif itb\informatics engineering\6th semester\if3260 - computer graphics\assignments\lighting-rubiks-cube\textured rubiks\cube.h
 	"Point3D.h"
 	"Cell.h"
 	<vector>
 	<GL/glut.h>
+
+1461502067 source:d:\tifani warnita\schools - college\itb\hmif itb\informatics engineering\6th semester\if3260 - computer graphics\assignments\lighting-rubiks-cube\textured rubiks\cube5.cpp
 	"Cube5.h"
 	<iostream>
 	<vector>
 	<algorithm>
+
+1461502067 d:\tifani warnita\schools - college\itb\hmif itb\informatics engineering\6th semester\if3260 - computer graphics\assignments\lighting-rubiks-cube\textured rubiks\cube5.h
 	"Point3D.h"
 	"Cell.h"
 	<vector>
 	<GL/glut.h>
+
+1461550495 source:d:\tifani warnita\schools - college\itb\hmif itb\informatics engineering\6th semester\if3260 - computer graphics\assignments\lighting-rubiks-cube\textured rubiks\drawhandler.cpp
 	"DrawHandler.h"
 	"Point3D.h"
 	"Cell.h"
 	"Cube.h"
 	"Cube5.h"
 	<vector>
+
+1461502067 d:\tifani warnita\schools - college\itb\hmif itb\informatics engineering\6th semester\if3260 - computer graphics\assignments\lighting-rubiks-cube\textured rubiks\drawhandler.h
 	<iostream>
 	<windows.h>
 	<GL/glut.h>
+
+1461568964 source:d:\tifani warnita\schools - college\itb\hmif itb\informatics engineering\6th semester\if3260 - computer graphics\assignments\lighting-rubiks-cube\textured rubiks\main.cpp
 	<cstdlib>
 	<windows.h>
 	<GL/glut.h>
@@ -636,202 +654,6 @@
 	"Cell.h"
 	<iostream>
 
-1462956128 f:\itb\semester_6\if3260 grafika komputer\lighting-rubiks-cube\rubiks\cell.h
-
-1461568998 d:\tifani warnita\schools - college\itb\hmif itb\informatics engineering\6th semester\if3260 - computer graphics\assignments\lighting-rubiks-cube\rubiks\cell.h
-
-1462956128 f:\itb\semester_6\if3260 grafika komputer\lighting-rubiks-cube\rubiks\point3d.h
-
-1463018441 source:f:\itb\semester_6\if3260 grafika komputer\lighting-rubiks-cube\rubiks\cube.cpp
-	"Cube.h"
-	<windows.h>
-	<iostream>
-	<vector>
-	<algorithm>
-
-1460796180 d:\tifani warnita\schools - college\itb\hmif itb\informatics engineering\6th semester\if3260 - computer graphics\assignments\lighting-rubiks-cube\rubiks\point3d.h
-
-1463017004 source:d:\tifani warnita\schools - college\itb\hmif itb\informatics engineering\6th semester\if3260 - computer graphics\assignments\lighting-rubiks-cube\rubiks\cube.cpp
-	"Cube.h"
-	<windows.h>
-	<iostream>
-	<vector>
-	<algorithm>
-
-1462956128 f:\itb\semester_6\if3260 grafika komputer\lighting-rubiks-cube\rubiks\cube.h
-
-1461502216 d:\tifani warnita\schools - college\itb\hmif itb\informatics engineering\6th semester\if3260 - computer graphics\assignments\lighting-rubiks-cube\rubiks\cube.h
-
-1463018434 source:f:\itb\semester_6\if3260 grafika komputer\lighting-rubiks-cube\rubiks\cube5.cpp
-	"Cube5.h"
-	<iostream>
-	<vector>
-	<algorithm>
-
-1463016810 source:d:\tifani warnita\schools - college\itb\hmif itb\informatics engineering\6th semester\if3260 - computer graphics\assignments\lighting-rubiks-cube\rubiks\cube5.cpp
-	"Cube5.h"
-	<iostream>
-	<vector>
-	<algorithm>
-
-1462956128 f:\itb\semester_6\if3260 grafika komputer\lighting-rubiks-cube\rubiks\cube5.h
-
-1462952711 d:\tifani warnita\schools - college\itb\hmif itb\informatics engineering\6th semester\if3260 - computer graphics\assignments\lighting-rubiks-cube\rubiks\cube5.h
-
-1463018397 source:f:\itb\semester_6\if3260 grafika komputer\lighting-rubiks-cube\rubiks\drawhandler.cpp
-	"DrawHandler.h"
+1460796180 source:d:\tifani warnita\schools - college\itb\hmif itb\informatics engineering\6th semester\if3260 - computer graphics\assignments\lighting-rubiks-cube\textured rubiks\point3d.cpp
 	"Point3D.h"
-	"Cell.h"
-	"Cube.h"
-	"Cube5.h"
-	<vector>
-
-1462952834 source:d:\tifani warnita\schools - college\itb\hmif itb\informatics engineering\6th semester\if3260 - computer graphics\assignments\lighting-rubiks-cube\rubiks\main.cpp
-	<cstdlib>
-	<windows.h>
-	<GL/glut.h>
-	"DrawHandler.h"
-	"Cell.h"
-	<iostream>
-
-1463016064 d:\tifani warnita\schools - college\itb\hmif itb\informatics engineering\6th semester\if3260 - computer graphics\assignments\lighting-rubiks-cube\rubiks\drawhandler.h
-	<iostream>
-	<windows.h>
-	<GL/glut.h>
-
-1460796180 source:d:\tifani warnita\schools - college\itb\hmif itb\informatics engineering\6th semester\if3260 - computer graphics\assignments\lighting-rubiks-cube\rubiks\point3d.cpp
-	"Point3D.h"
-
-1463016787 source:d:\tifani warnita\schools - college\itb\hmif itb\informatics engineering\6th semester\if3260 - computer graphics\assignments\lighting-rubiks-cube\rubiks\drawhandler.cpp
-	"DrawHandler.h"
-	"Point3D.h"
-	"Cell.h"
-	"Cube.h"
-	"Cube5.h"
-	<vector>
-
-1462977284 f:\itb\semester_6\if3260 grafika komputer\lighting-rubiks-cube\rubiks\drawhandler.h
-	<iostream>
-	<windows.h>
-	<GL/glut.h>
-
-1462975833 source:c:\users\asus x202e\documents\github\lighting-rubiks-cube\rubiks\cell.cpp
-
-1462975833 482938272d144a8a76bc69b4fdd395b9356ef
-	"Cell.h"
-	<windows.h>
-	<GL/glut.h>
-
-1462967025 c:\users\asus x202e\documents\github\lighting-rubiks-cube\rubiks\cell.h
-	"Point3D.h"
-	<windows.h>
-	<GL/glut.h>
-	<stdio.h>
-
-1462967025 c:\users\asus x202e\documents\github\lighting-rubiks-cube\rubiks\point3d.h
-
-1462975735 source:c:\users\asus x202e\documents\github\lighting-rubiks-cube\rubiks\cube.cpp
-	"Cube.h"
-	<windows.h>
-	<iostream>
-	<vector>
-	<algorithm>
-
-1462967025 c:\users\asus x202e\documents\github\lighting-rubiks-cube\rubiks\cube.h
-	"Point3D.h"
-	"Cell.h"
-	<vector>
-	<GL/glut.h>
-
-1462967025 source:c:\users\asus x202e\documents\github\lighting-rubiks-cube\rubiks\cube5.cpp
-	"Cube5.h"
-	<iostream>
-	<vector>
-	<algorithm>
-
-1462967025 c:\users\asus x202e\documents\github\lighting-rubiks-cube\rubiks\cube5.h
-	"Point3D.h"
-	"Cell.h"
-	<vector>
-	<GL/glut.h>
-
-1462974412 source:c:\users\asus x202e\documents\github\lighting-rubiks-cube\rubiks\drawhandler.cpp
-	"DrawHandler.h"
-	"Point3D.h"
-	"Cell.h"
-	"Cube.h"
-	"Cube5.h"
-	<vector>
-
-1462967025 c:\users\asus x202e\documents\github\lighting-rubiks-cube\rubiks\drawhandler.h
-
-1463017833 source:f:\itb\semester_6\if3260 grafika komputer\lighting-rubiks-cube\rubiks\main.cpp
-	<cstdlib>
-	<windows.h>
-	<GL/glut.h>
-	"DrawHandler.h"
-	"Cell.h"
-	<iostream>
-
-1462967025 source:c:\users\asus x202e\documents\github\lighting-rubiks-cube\rubiks\main.cpp
-
-1462956128 source:f:\itb\semester_6\if3260 grafika komputer\lighting-rubiks-cube\rubiks\point3d.cpp
-	"Point3D.h"
-
-1462956128 "
-
-1462967025 source:c:\users\asus x202e\documents\github\lighting-rubiks-cube\rubiks\point3d.cpp
-	"Point3D.h"
-
-1462967025 source:c:\users\asus x202e\documents\github\lighting-rubiks-cube\rubiks\soil\image_dxt.c
-	"image_DXT.h"
-	<math.h>
-	<stdlib.h>
-	<string.h>
-	<stdio.h>
-
-1462967025 c:\users\asus x202e\documents\github\lighting-rubiks-cube\rubiks\soil\image_dxt.h
-
-1462967025 source:c:\users\asus x202e\documents\github\lighting-rubiks-cube\rubiks\soil\image_helper.c
-	"image_helper.h"
-	<stdlib.h>
-	<math.h>
-
-1462967025 c:\users\asus x202e\documents\github\lighting-rubiks-cube\rubiks\soil\image_helper.h
-
-1462967025 source:c:\users\asus x202e\documents\github\lighting-rubiks-cube\rubiks\soil\soil.c
-	<windows.h>
-	<wingdi.h>
-	<GL/gl.h>
-	<OpenGL/gl.h>
-	<Carbon/Carbon.h>
-	<GL/gl.h>
-	<GL/glx.h>
-	"SOIL.h"
-	"stb_image_aug.h"
-	"image_helper.h"
-	"image_DXT.h"
-	<stdlib.h>
-	<string.h>
-
-1462967025 c:\users\asus x202e\documents\github\lighting-rubiks-cube\rubiks\soil\soil.h
-
-1462967025 c:\users\asus x202e\documents\github\lighting-rubiks-cube\rubiks\soil\stb_image_aug.h
-	<stdio.h>
-
-1462967025 source:c:\users\asus x202e\documents\github\lighting-rubiks-cube\rubiks\soil\stb_image_aug.c
-	"stb_image_aug.h"
-	<math.h>
-	<string.h>
-	<stdio.h>
-	<stdlib.h>
-	<memory.h>
-	<assert.h>
-	<stdarg.h>
-	"stbi_DDS_aug.h"
-	"stbi_DDS_aug_c.h"
-
-1462967025 c:\users\asus x202e\documents\github\lighting-rubiks-cube\rubiks\soil\stbi_dds_aug.h
-
-1462967025 c:\users\asus x202e\documents\github\lighting-rubiks-cube\rubiks\soil\stbi_dds_aug_c.h
 

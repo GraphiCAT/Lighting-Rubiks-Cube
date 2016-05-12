@@ -21,7 +21,6 @@
 #define ALLZ 12
 
 using namespace std;
-GLfloat qaLightPosition5[]	= {.5, .5, 0.0, 0.0};
 
 Cube5::Cube5(){
     Point3D top(0,-1,0);
@@ -239,7 +238,7 @@ void Cube5::rotateAll(int axis, int direction) {
 void Cube5::rotateByAxis(GLfloat angle, int axis) {
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT); // Clear color and depth buffers
 
-    switch (axis) {
+  switch (axis) {
     case ALLX:
       glRotatef(angle,1.0f,0.0f,0.0f);
       break;
@@ -251,10 +250,10 @@ void Cube5::rotateByAxis(GLfloat angle, int axis) {
       break;
     default:
       break;
-    }
+  }
+  drawCube();
 
-    drawCube();
-    glutSwapBuffers();
+  glutSwapBuffers();
 }
 
 void Cube5::handleRotate(int face, int direction) {
@@ -301,7 +300,7 @@ vector<int> Cube5::getRotationVector(int face) {
       return vector<int>(arr, arr + sizeof(arr) / sizeof(arr[0]));
       } break;
     case FRONT: {
-      int arr[] = {125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,20,21,22,23,24,95,96,97,98,99,45,46,47,48,49,70,71,72,73,74}; //clockwise
+      int arr[] = {125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,20,21,22,23,24,95,96,97,98,99,50,51,52,53,54,45,46,47,48,49,70,71,72,73,74}; //clockwise
       return vector<int>(arr, arr + sizeof(arr) / sizeof(arr[0]));
       } break;
     case MIDDLEY: {
@@ -364,7 +363,7 @@ void Cube5::rotateSlice(GLfloat angle, vector<int> rotate, Point3D axis) {
     glRotatef(angle,(GLfloat)axis.getX(),(GLfloat)axis.getY(),(GLfloat)axis.getZ());
 
     //Draw rotated
-    for (int i=0; i<(int)rotate.size(); i++) {
+    for (int i = 0; i < rotate.size(); i++) {
         surface[rotate.at(i)].drawCell();
     }
 
