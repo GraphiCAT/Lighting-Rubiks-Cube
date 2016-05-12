@@ -35,15 +35,15 @@ int direction = CLOCKWISE;
 
 /* Initialize OpenGL Graphics */
 void initGL() {
-   glClearColor(0.0f, 0.0f, 0.0f, 1.0f); // Set background color to black and opaque
-   glClearDepth(1.0f);                   // Set background depth to farthest
-   glEnable(GL_DEPTH_TEST);   // Enable depth testing for z-culling
-   glDepthFunc(GL_LEQUAL);    // Set the type of depth-test
-   glShadeModel(GL_SMOOTH);   // Enable smooth shading
-   glHint(GL_PERSPECTIVE_CORRECTION_HINT, GL_NICEST);  // Nice perspective corrections
-   glMatrixMode(GL_MODELVIEW);
-   glTranslatef(0.0f, 0.0f, -20.0f);
-   glRotatef(45.0f,1.0f,1.0f,0.0f);
+    glClearColor(0.0f, 0.0f, 0.0f, 1.0f); // Set background color to black and opaque
+    glClearDepth(1.0f);                   // Set background depth to farthest
+    glEnable(GL_DEPTH_TEST);   // Enable depth testing for z-culling
+    glDepthFunc(GL_LEQUAL);    // Set the type of depth-test
+    glShadeModel(GL_SMOOTH);   // Enable smooth shading
+    glHint(GL_PERSPECTIVE_CORRECTION_HINT, GL_NICEST);  // Nice perspective corrections
+    glMatrixMode(GL_MODELVIEW);
+    glTranslatef(0.0f, 0.0f, -20.0f);
+    glRotatef(45.0f,1.0f,1.0f,0.0f);
 }
 
 void init()
@@ -79,7 +79,6 @@ void setLight(float x, float y, float z) {
 	glLightfv(GL_LIGHT0, GL_SPECULAR, qaSpecularLight);
 
 	// Set the light position
-	// GLfloat qaLightPosition[]	= {0.5, 0.5, 0.0, 0.0};
 	GLfloat qaLightPosition[]	= {x, y, z, 0.0};
 	glLightfv(GL_LIGHT0, GL_POSITION, qaLightPosition);
 
@@ -100,8 +99,8 @@ void displayCube5() {
 }
 
 void keyPressed (unsigned char key, int x, int y) {
-  Sleep(100);
-  switch (key) {
+    Sleep(100);
+    switch (key) {
     case 'b': rubiks.handleRotate(BACK,direction);
       break;
     case 'f': rubiks.handleRotate(FRONT,direction);
@@ -132,15 +131,15 @@ void keyPressed (unsigned char key, int x, int y) {
       break;
     default:
       break;
-  }
+    }
 
-  setLight(0.5, 0.5, 0.0);
-  setLight(-0.5, 0.5, 0.0);
+    setLight(0.5, 0.5, 0.0);
+    setLight(-0.5, 0.5, 0.0);
 }
 
 void keyPressed5 (unsigned char key, int x, int y) {
-  Sleep(100);
-  switch (key) {
+    Sleep(100);
+    switch (key) {
     case 'b': rubiks5.handleRotate(BACK,direction);
       break;
     case 'f': rubiks5.handleRotate(FRONT,direction);
@@ -169,13 +168,13 @@ void keyPressed5 (unsigned char key, int x, int y) {
       break;
     default:
       break;
-  }
-  setLight(0.5, 0.5, 0.0);
-  setLight(-0.5, 0.5, 0.0);
+    }
+    setLight(0.5, 0.5, 0.0);
+    setLight(-0.5, 0.5, 0.0);
 }
 
 void toggleDirection() {
-  if (direction==CLOCKWISE)
+  if (direction == CLOCKWISE)
     direction = COUNTER_CLOCKWISE;
   else
     direction = CLOCKWISE;

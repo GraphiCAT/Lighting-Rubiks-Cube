@@ -123,27 +123,25 @@ void Cube::drawCube(){
 }
 
 void Cube::rotateAll(int axis, int direction) {
-  float degrees_per_frame = 5.0f;
-  int frames = 45.0f/degrees_per_frame;
+    float degrees_per_frame = 5.0f;
+    int frames = 45.0f/degrees_per_frame;
 
-  if (direction==COUNTER_CLOCKWISE) {
-    for (int i=0;i<=frames;i++) {
-      rotateByAxis(degrees_per_frame,axis);
-      Sleep(100);
+    if (direction==COUNTER_CLOCKWISE) {
+        for (int i=0;i<=frames;i++) {
+            rotateByAxis(degrees_per_frame,axis);
+            Sleep(100);
+        }
+    } else {
+        for (int i=0;i<=frames;i++) {
+            rotateByAxis(-degrees_per_frame,axis);
+            Sleep(100);
+        }
     }
-  } else {
-    for (int i=0;i<=frames;i++) {
-      rotateByAxis(-degrees_per_frame,axis);
-      Sleep(100);
-    }
-  }
 }
 
 void Cube::rotateByAxis(GLfloat angle, int axis) {
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT); // Clear color and depth buffers
-
-
-  switch (axis) {
+    switch (axis) {
     case ALLX:
       glRotatef(angle,1.0f,0.0f,0.0f);
       break;
@@ -155,66 +153,66 @@ void Cube::rotateByAxis(GLfloat angle, int axis) {
       break;
     default:
       break;
-  }
-  glLightfv(GL_LIGHT0, GL_POSITION, qaLightPosition);
-  drawCube();
-  glutSwapBuffers();
+    }
+    glLightfv(GL_LIGHT0, GL_POSITION, qaLightPosition);
+    drawCube();
+    glutSwapBuffers();
 }
 
 void Cube::handleRotate(int face, int direction) {
-  if (!solve) {
-    faceHistory.push_back(face);
-    directionHistory.push_back(direction);
-  }
+    if (!solve) {
+        faceHistory.push_back(face);
+        directionHistory.push_back(direction);
+    }
 
-  float degrees_per_frame = 10.0f;
-  int frames = 90.0f/degrees_per_frame;
-  GLfloat angleCube = 0.0f;
-  vector<int> rotate = getRotationVector(face);
-  vector<int> sides(rotate.begin(),rotate.begin()+12);
-  if (direction==COUNTER_CLOCKWISE) {
-    for (int i=0;i<=frames;i++) {
-      rotateSlice(angleCube,rotate,getRotationAxis(face));
-      angleCube += degrees_per_frame;
-      Sleep(100);
+    float degrees_per_frame = 10.0f;
+    int frames = 90.0f/degrees_per_frame;
+    GLfloat angleCube = 0.0f;
+    vector<int> rotate = getRotationVector(face);
+    vector<int> sides(rotate.begin(),rotate.begin()+12);
+    if (direction==COUNTER_CLOCKWISE) {
+        for (int i=0;i<=frames;i++) {
+            rotateSlice(angleCube,rotate,getRotationAxis(face));
+            angleCube += degrees_per_frame;
+            Sleep(100);
+        }
+        swapColors(sides,3);
+        if (rotate.size()>12) {
+            vector<int> flat(rotate.begin()+12,rotate.begin()+20);
+            swapColors(flat,2);
+        }
+    } else {
+        for (int i=0;i<=frames;i++) {
+            rotateSlice(angleCube,getRotationVector(face),getRotationAxis(face));
+            angleCube -= degrees_per_frame;
+            Sleep(100);
+        }
+        swapColors(sides,-3);
+        if (rotate.size()>12) {
+            vector<int> flat(rotate.begin()+12,rotate.begin()+20);
+            swapColors(flat,-2);
+        }
     }
-    swapColors(sides,3);
-    if (rotate.size()>12) {
-        vector<int> flat(rotate.begin()+12,rotate.begin()+20);
-        swapColors(flat,2);
-    }
-  } else {
-    for (int i=0;i<=frames;i++) {
-      rotateSlice(angleCube,getRotationVector(face),getRotationAxis(face));
-      angleCube -= degrees_per_frame;
-      Sleep(100);
-    }
-    swapColors(sides,-3);
-    if (rotate.size()>12) {
-        vector<int> flat(rotate.begin()+12,rotate.begin()+20);
-        swapColors(flat,-2);
-    }
-  }
 }
 
 void Cube::autoSolve() {
-  solve = true;
-  int moves = faceHistory.size();
-  for (int i=0;i<moves;i++) {
-    if (directionHistory.back()==CLOCKWISE) {
-      handleRotate(faceHistory.back(),COUNTER_CLOCKWISE);
+    solve = true;
+    int moves = faceHistory.size();
+    for (int i=0;i<moves;i++) {
+        if (directionHistory.back()==CLOCKWISE) {
+            handleRotate(faceHistory.back(),COUNTER_CLOCKWISE);
+        }
+        else {
+            handleRotate(faceHistory.back(),CLOCKWISE);
+        }
+        faceHistory.pop_back();
+        directionHistory.pop_back();
     }
-    else {
-      handleRotate(faceHistory.back(),CLOCKWISE);
-    }
-    faceHistory.pop_back();
-    directionHistory.pop_back();
-  }
-  solve=false;
+    solve=false;
 }
 
 vector<int> Cube::getRotationVector(int face) {
-  switch (face) {
+    switch (face) {
     case BOTTOM: {
       int arr[] = {24,21,18,36,37,38,27,30,33,47,46,45,0,1,2,5,8,7,6,3,4}; //clockwise
       return vector<int>(arr, arr + sizeof(arr) / sizeof(arr[0]));
@@ -253,31 +251,31 @@ vector<int> Cube::getRotationVector(int face) {
       } break;
     default:
       break;
-  }
-  return vector<int>();
+    }
+    return vector<int>();
 }
 
 Point3D Cube::getRotationAxis(int face) {
-  switch (face) {
-    case BOTTOM:
-    case TOP:
-    case MIDDLEY:
-      return Point3D(0.0,1.0,0.0);
-      break;
-    case RIGHT:
-    case LEFT:
-    case MIDDLEX:
-      return Point3D(-1.0,0.0,0.0);
-      break;
-    case BACK:
-    case FRONT:
-    case MIDDLEZ:
-      return Point3D(0.0,0.0,1.0);
-      break;
-    default:
-      break;
-  }
-  return Point3D();
+    switch (face) {
+        case BOTTOM:
+        case TOP:
+        case MIDDLEY:
+          return Point3D(0.0,1.0,0.0);
+          break;
+        case RIGHT:
+        case LEFT:
+        case MIDDLEX:
+          return Point3D(-1.0,0.0,0.0);
+          break;
+        case BACK:
+        case FRONT:
+        case MIDDLEZ:
+          return Point3D(0.0,0.0,1.0);
+          break;
+        default:
+          break;
+    }
+    return Point3D();
 }
 
 void Cube::rotateSlice(GLfloat angle, vector<int> rotate, Point3D axis) {
@@ -308,7 +306,7 @@ void Cube::rotateSlice(GLfloat angle, vector<int> rotate, Point3D axis) {
 }
 
 void Cube::swapColors(vector<int> array, int jump) {
-  vector<int> colors;
+    vector<int> colors;
 
   //copy colors to temp vector
   for (int i=0;i<(int)array.size(); i++) {

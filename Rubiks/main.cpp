@@ -9,7 +9,7 @@
 #include <iostream>
 
 /* Global variables */
-char title[] = "Rubix";
+char title[] = "Rubik's";
 GLfloat anglePyramid = 0.0f;  // Rotational angle for pyramid [NEW]
 int window_1, window_2;
 

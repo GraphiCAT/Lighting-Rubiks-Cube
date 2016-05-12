@@ -1,4 +1,3 @@
-
 #include "Cube5.h"
 
 #include <iostream>
@@ -57,8 +56,6 @@ Cube5::Cube5(){
     surface[22] = Cell(WHITE, Point3D(0,-2.9,2), top);
     surface[23] = Cell(WHITE, Point3D(1,-2.9,2), top);
     surface[24] = Cell(WHITE, Point3D(2,-2.9,2), top);
-
-
 
     //BOTTOM SURFACE
     surface[25] = Cell(YELLOW, Point3D(-2,2.9,-2), bottom);
@@ -239,7 +236,7 @@ void Cube5::rotateAll(int axis, int direction) {
 void Cube5::rotateByAxis(GLfloat angle, int axis) {
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT); // Clear color and depth buffers
 
-  switch (axis) {
+    switch (axis) {
     case ALLX:
       glRotatef(angle,1.0f,0.0f,0.0f);
       break;

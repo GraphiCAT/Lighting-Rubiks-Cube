@@ -662,7 +662,11 @@
 
 1461502216 d:\tifani warnita\schools - college\itb\hmif itb\informatics engineering\6th semester\if3260 - computer graphics\assignments\lighting-rubiks-cube\rubiks\cube.h
 
-1462956128 source:f:\itb\semester_6\if3260 grafika komputer\lighting-rubiks-cube\rubiks\cube5.cpp
+1463016040 source:f:\itb\semester_6\if3260 grafika komputer\lighting-rubiks-cube\rubiks\cube5.cpp
+	"Cube5.h"
+	<iostream>
+	<vector>
+	<algorithm>
 
 1463016810 source:d:\tifani warnita\schools - college\itb\hmif itb\informatics engineering\6th semester\if3260 - computer graphics\assignments\lighting-rubiks-cube\rubiks\cube5.cpp
 	"Cube5.h"
@@ -674,7 +678,13 @@
 
 1462952711 d:\tifani warnita\schools - college\itb\hmif itb\informatics engineering\6th semester\if3260 - computer graphics\assignments\lighting-rubiks-cube\rubiks\cube5.h
 
-1462956128 source:f:\itb\semester_6\if3260 grafika komputer\lighting-rubiks-cube\rubiks\drawhandler.cpp
+1463016468 source:f:\itb\semester_6\if3260 grafika komputer\lighting-rubiks-cube\rubiks\drawhandler.cpp
+	"DrawHandler.h"
+	"Point3D.h"
+	"Cell.h"
+	"Cube.h"
+	"Cube5.h"
+	<vector>
 
 1462952834 source:d:\tifani warnita\schools - college\itb\hmif itb\informatics engineering\6th semester\if3260 - computer graphics\assignments\lighting-rubiks-cube\rubiks\main.cpp
 	<cstdlib>
@@ -700,7 +710,10 @@
 	"Cube5.h"
 	<vector>
 
-1462956128 f:\itb\semester_6\if3260 grafika komputer\lighting-rubiks-cube\rubiks\drawhandler.h
+1462977284 f:\itb\semester_6\if3260 grafika komputer\lighting-rubiks-cube\rubiks\drawhandler.h
+	<iostream>
+	<windows.h>
+	<GL/glut.h>
 
 1462975833 source:c:\users\asus x202e\documents\github\lighting-rubiks-cube\rubiks\cell.cpp
 
@@ -752,7 +765,13 @@
 
 1462967025 c:\users\asus x202e\documents\github\lighting-rubiks-cube\rubiks\drawhandler.h
 
-1462956128 source:f:\itb\semester_6\if3260 grafika komputer\lighting-rubiks-cube\rubiks\main.cpp
+1463016354 source:f:\itb\semester_6\if3260 grafika komputer\lighting-rubiks-cube\rubiks\main.cpp
+	<cstdlib>
+	<windows.h>
+	<GL/glut.h>
+	"DrawHandler.h"
+	"Cell.h"
+	<iostream>
 
 1462967025 source:c:\users\asus x202e\documents\github\lighting-rubiks-cube\rubiks\main.cpp
 
