@@ -154,7 +154,7 @@ void Cube::rotateByAxis(GLfloat angle, int axis) {
     default:
       break;
     }
-    glLightfv(GL_LIGHT0, GL_POSITION, qaLightPosition);
+    //glLightfv(GL_LIGHT0, GL_POSITION, qaLightPosition);
     drawCube();
     glutSwapBuffers();
 }

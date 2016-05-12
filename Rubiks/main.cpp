@@ -43,7 +43,7 @@ int main(int argc, char** argv) {
            window_1 = glutCreateWindow (argv[0]);
            glutSetWindowTitle(title);
            glutDisplayFunc(display_2);
-           glutReshapeFunc(reshape_2);
+           glutReshapeFunc(reshape_1);
            glutKeyboardFunc(keyPressed5);
            glutMouseFunc(mouse);
            initGL();

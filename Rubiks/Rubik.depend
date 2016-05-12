@@ -639,7 +639,7 @@
 
 1462956128 f:\itb\semester_6\if3260 grafika komputer\lighting-rubiks-cube\rubiks\point3d.h
 
-1462976164 source:f:\itb\semester_6\if3260 grafika komputer\lighting-rubiks-cube\rubiks\cube.cpp
+1463017664 source:f:\itb\semester_6\if3260 grafika komputer\lighting-rubiks-cube\rubiks\cube.cpp
 	"Cube.h"
 	<windows.h>
 	<iostream>
@@ -654,7 +654,7 @@
 
 1461502216 d:\tifani warnita\schools - college\itb\hmif itb\informatics engineering\6th semester\if3260 - computer graphics\assignments\lighting-rubiks-cube\rubiks\cube.h
 
-1463016040 source:f:\itb\semester_6\if3260 grafika komputer\lighting-rubiks-cube\rubiks\cube5.cpp
+1463018241 source:f:\itb\semester_6\if3260 grafika komputer\lighting-rubiks-cube\rubiks\cube5.cpp
 	"Cube5.h"
 	<iostream>
 	<vector>
@@ -747,7 +747,7 @@
 
 1462967025 c:\users\asus x202e\documents\github\lighting-rubiks-cube\rubiks\drawhandler.h
 
-1463016354 source:f:\itb\semester_6\if3260 grafika komputer\lighting-rubiks-cube\rubiks\main.cpp
+1463017833 source:f:\itb\semester_6\if3260 grafika komputer\lighting-rubiks-cube\rubiks\main.cpp
 	<cstdlib>
 	<windows.h>
 	<GL/glut.h>
