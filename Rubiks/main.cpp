@@ -45,7 +45,7 @@ int main(int argc, char** argv) {
            glutDisplayFunc(display_2);
            glutReshapeFunc(reshape_1);
            glutKeyboardFunc(keyPressed5);
-           glutMouseFunc(mouse);
+           glutMouseFunc(mouse5);
            initGL();
            glutMainLoop();
        }
