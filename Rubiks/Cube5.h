@@ -18,6 +18,7 @@ class Cube5
         void handleRotate(int face, int direction);
         void rotateAll(int axis, int direction);
         static void switchMaterials();
+        static void switchPattern();
 
     private :
         void rotateSlice(GLfloat angle,std::vector<int> rotate, Point3D axis);
@@ -26,6 +27,7 @@ class Cube5
         void rotateByAxis(GLfloat angle, int axis);
         Cell surface[150];
         static bool isTextured;
+        static bool pattern;
 };
 
 #endif // Cube_H

@@ -24,6 +24,7 @@ using namespace std;
 
 bool Cube::solve = false;
 bool Cube::isTextured = false;
+bool Cube::pattern = true;
 GLfloat qaLightPosition[]	= {.5, .5, 0.0, 0.0};
 
 Cube::Cube() {
@@ -119,7 +120,7 @@ void Cube::setSurface(Cell _surface[64]){
 
 void Cube::drawCube(){
     for (int i = 0; i < 54; i++) {
-        surface[i].drawCell(Cube::isTextured);
+        surface[i].drawCell(Cube::isTextured, Cube::pattern);
     }
 }
 
@@ -287,7 +288,7 @@ void Cube::rotateSlice(GLfloat angle, vector<int> rotate, Point3D axis) {
     //Draw cube unrotated
     for (int i = 0; i < 54; i++) {
         if(std::find(rotate.begin(), rotate.end(), i) == rotate.end()) {
-            surface[i].drawCell(Cube::isTextured);
+            surface[i].drawCell(Cube::isTextured, Cube::pattern);
         }
     }
 
@@ -300,7 +301,7 @@ void Cube::rotateSlice(GLfloat angle, vector<int> rotate, Point3D axis) {
 
     //Draw rotated
     for (int i=0; i<(int)rotate.size(); i++) {
-        surface[rotate.at(i)].drawCell(Cube::isTextured);
+        surface[rotate.at(i)].drawCell(Cube::isTextured, Cube::pattern);
     }
     glPopMatrix();
     glutSwapBuffers();
@@ -322,4 +323,10 @@ void Cube::swapColors(vector<int> array, int jump) {
 
 void Cube::switchMaterials() {
     Cube::isTextured = !Cube::isTextured;
+}
+
+void Cube::switchPattern() {
+    if (Cube::isTextured) {
+        Cube::pattern = !Cube::pattern;
+    }
 }

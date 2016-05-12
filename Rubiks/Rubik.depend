@@ -590,7 +590,7 @@
 	<windows.h>
 	<GL/glut.h>
 
-1463021947 source:d:\tifani warnita\schools - college\itb\hmif itb\informatics engineering\6th semester\if3260 - computer graphics\assignments\lighting-rubiks-cube\rubiks\cell.cpp
+1463024360 source:d:\tifani warnita\schools - college\itb\hmif itb\informatics engineering\6th semester\if3260 - computer graphics\assignments\lighting-rubiks-cube\rubiks\cell.cpp
 	"Cell.h"
 	<windows.h>
 	<GL/glut.h>
@@ -639,7 +639,7 @@
 
 1462956128 f:\itb\semester_6\if3260 grafika komputer\lighting-rubiks-cube\rubiks\cell.h
 
-1463021957 d:\tifani warnita\schools - college\itb\hmif itb\informatics engineering\6th semester\if3260 - computer graphics\assignments\lighting-rubiks-cube\rubiks\cell.h
+1463024372 d:\tifani warnita\schools - college\itb\hmif itb\informatics engineering\6th semester\if3260 - computer graphics\assignments\lighting-rubiks-cube\rubiks\cell.h
 	"Point3D.h"
 	<windows.h>
 	<GL/glut.h>
@@ -656,7 +656,7 @@
 
 1460796180 d:\tifani warnita\schools - college\itb\hmif itb\informatics engineering\6th semester\if3260 - computer graphics\assignments\lighting-rubiks-cube\rubiks\point3d.h
 
-1463022427 source:d:\tifani warnita\schools - college\itb\hmif itb\informatics engineering\6th semester\if3260 - computer graphics\assignments\lighting-rubiks-cube\rubiks\cube.cpp
+1463024397 source:d:\tifani warnita\schools - college\itb\hmif itb\informatics engineering\6th semester\if3260 - computer graphics\assignments\lighting-rubiks-cube\rubiks\cube.cpp
 	"Cube.h"
 	<windows.h>
 	<iostream>
@@ -665,7 +665,7 @@
 
 1462956128 f:\itb\semester_6\if3260 grafika komputer\lighting-rubiks-cube\rubiks\cube.h
 
-1463020220 d:\tifani warnita\schools - college\itb\hmif itb\informatics engineering\6th semester\if3260 - computer graphics\assignments\lighting-rubiks-cube\rubiks\cube.h
+1463024087 d:\tifani warnita\schools - college\itb\hmif itb\informatics engineering\6th semester\if3260 - computer graphics\assignments\lighting-rubiks-cube\rubiks\cube.h
 	"Point3D.h"
 	"Cell.h"
 	<vector>
@@ -677,7 +677,7 @@
 	<vector>
 	<algorithm>
 
-1463022055 source:d:\tifani warnita\schools - college\itb\hmif itb\informatics engineering\6th semester\if3260 - computer graphics\assignments\lighting-rubiks-cube\rubiks\cube5.cpp
+1463024422 source:d:\tifani warnita\schools - college\itb\hmif itb\informatics engineering\6th semester\if3260 - computer graphics\assignments\lighting-rubiks-cube\rubiks\cube5.cpp
 	"Cube5.h"
 	<iostream>
 	<vector>
@@ -685,7 +685,7 @@
 
 1462956128 f:\itb\semester_6\if3260 grafika komputer\lighting-rubiks-cube\rubiks\cube5.h
 
-1463020221 d:\tifani warnita\schools - college\itb\hmif itb\informatics engineering\6th semester\if3260 - computer graphics\assignments\lighting-rubiks-cube\rubiks\cube5.h
+1463024096 d:\tifani warnita\schools - college\itb\hmif itb\informatics engineering\6th semester\if3260 - computer graphics\assignments\lighting-rubiks-cube\rubiks\cube5.h
 	"Point3D.h"
 	"Cell.h"
 	<vector>
@@ -699,7 +699,7 @@
 	"Cube5.h"
 	<vector>
 
-1463020410 source:d:\tifani warnita\schools - college\itb\hmif itb\informatics engineering\6th semester\if3260 - computer graphics\assignments\lighting-rubiks-cube\rubiks\main.cpp
+1463022569 source:d:\tifani warnita\schools - college\itb\hmif itb\informatics engineering\6th semester\if3260 - computer graphics\assignments\lighting-rubiks-cube\rubiks\main.cpp
 	<cstdlib>
 	<windows.h>
 	<GL/glut.h>
@@ -707,7 +707,7 @@
 	"Cell.h"
 	<iostream>
 
-1463016064 d:\tifani warnita\schools - college\itb\hmif itb\informatics engineering\6th semester\if3260 - computer graphics\assignments\lighting-rubiks-cube\rubiks\drawhandler.h
+1463022569 d:\tifani warnita\schools - college\itb\hmif itb\informatics engineering\6th semester\if3260 - computer graphics\assignments\lighting-rubiks-cube\rubiks\drawhandler.h
 	<iostream>
 	<windows.h>
 	<GL/glut.h>
@@ -715,7 +715,7 @@
 1460796180 source:d:\tifani warnita\schools - college\itb\hmif itb\informatics engineering\6th semester\if3260 - computer graphics\assignments\lighting-rubiks-cube\rubiks\point3d.cpp
 	"Point3D.h"
 
-1463022500 source:d:\tifani warnita\schools - college\itb\hmif itb\informatics engineering\6th semester\if3260 - computer graphics\assignments\lighting-rubiks-cube\rubiks\drawhandler.cpp
+1463024247 source:d:\tifani warnita\schools - college\itb\hmif itb\informatics engineering\6th semester\if3260 - computer graphics\assignments\lighting-rubiks-cube\rubiks\drawhandler.cpp
 	"DrawHandler.h"
 	"Point3D.h"
 	"Cell.h"

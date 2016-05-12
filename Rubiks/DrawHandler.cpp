@@ -141,6 +141,11 @@ void keyPressed (unsigned char key, int x, int y) {
             glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT); // Clear color and depth buffers
             rubiks.drawCube();
           break;
+        case 'p':
+            rubiks.switchPattern();
+            glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT); // Clear color and depth buffers
+            rubiks.drawCube();
+          break;
         default:
           break;
     }
@@ -179,6 +184,11 @@ void keyPressed5 (unsigned char key, int x, int y) {
           break;
         case 'q':
             rubiks5.switchMaterials();
+            glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT); // Clear color and depth buffers
+            rubiks5.drawCube();
+          break;
+        case 'p':
+            rubiks5.switchPattern();
             glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT); // Clear color and depth buffers
             rubiks5.drawCube();
           break;
@@ -401,7 +411,8 @@ void printMenu() {
     std::cout << "1: Start playing (3x3)" << std::endl;
     std::cout << "2: Start playing (5x5)" << std::endl;
     std::cout << "s: Solve rubiks" << std::endl;
-    std::cout << "q: Switch plain colours/textures" << std::endl;
+    std::cout << "q: Switch plain color/texture" << std::endl;
+    std::cout << "p: Change pattern (in texture mode)" << std::endl;
     std::cout << "f: Rotate front" << std::endl;
     std::cout << "b: Rotate back" << std::endl;
     std::cout << "r: Rotate right" << std::endl;

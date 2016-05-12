@@ -10,6 +10,12 @@ GLuint Cell::texture3 = 0;
 GLuint Cell::texture4 = 0;
 GLuint Cell::texture5 = 0;
 GLuint Cell::texture6 = 0;
+GLuint Cell::textureb1 = 0;
+GLuint Cell::textureb2 = 0;
+GLuint Cell::textureb3 = 0;
+GLuint Cell::textureb4 = 0;
+GLuint Cell::textureb5 = 0;
+GLuint Cell::textureb6 = 0;
 
 void Cell::initTexture() {
     glGenTextures(1, &Cell::texture);
@@ -27,7 +33,7 @@ void Cell::initTexture() {
     glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, image);
     SOIL_free_image_data(image);
 
-    /* Texture 1-2 */
+    /* Texture 1-6 */
     glGenTextures(1, &Cell::texture1);
     glBindTexture(GL_TEXTURE_2D,Cell::texture1);
 
@@ -111,6 +117,91 @@ void Cell::initTexture() {
     unsigned char* image6 = SOIL_load_image("purple.png", &width, &height, 0, SOIL_LOAD_RGB);
     glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, image6);
     SOIL_free_image_data(image6);
+
+    /* Texture b1-b6 */
+    glGenTextures(1, &Cell::textureb1);
+    glBindTexture(GL_TEXTURE_2D,Cell::textureb1);
+
+    // Set the texture wrapping parameters
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
+    // // Set texture filtering parameters
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+
+    unsigned char* imageb1 = SOIL_load_image("b_blue.png", &width, &height, 0, SOIL_LOAD_RGB);
+    glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, imageb1);
+    SOIL_free_image_data(imageb1);
+
+    glGenTextures(1, &Cell::textureb2);
+    glBindTexture(GL_TEXTURE_2D,Cell::textureb2);
+
+    // Set the texture wrapping parameters
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
+    // // Set texture filtering parameters
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+
+    unsigned char* imageb2 = SOIL_load_image("b_green.png", &width, &height, 0, SOIL_LOAD_RGB);
+    glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, imageb2);
+    SOIL_free_image_data(imageb2);
+
+    glGenTextures(1, &Cell::textureb3);
+    glBindTexture(GL_TEXTURE_2D,Cell::textureb3);
+
+    // Set the texture wrapping parameters
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
+    // // Set texture filtering parameters
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+
+    unsigned char* imageb3 = SOIL_load_image("b_orange.png", &width, &height, 0, SOIL_LOAD_RGB);
+    glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, imageb3);
+    SOIL_free_image_data(imageb3);
+
+    glGenTextures(1, &Cell::textureb4);
+    glBindTexture(GL_TEXTURE_2D,Cell::textureb4);
+
+    // Set the texture wrapping parameters
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
+    // // Set texture filtering parameters
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+
+    unsigned char* imageb4 = SOIL_load_image("b_yellow.png", &width, &height, 0, SOIL_LOAD_RGB);
+    glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, imageb4);
+    SOIL_free_image_data(imageb4);
+
+    glGenTextures(1, &Cell::textureb5);
+    glBindTexture(GL_TEXTURE_2D,Cell::textureb5);
+
+    // Set the texture wrapping parameters
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
+    // // Set texture filtering parameters
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+
+    unsigned char* imageb5 = SOIL_load_image("b_pink.png", &width, &height, 0, SOIL_LOAD_RGB);
+    glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, imageb5);
+    SOIL_free_image_data(imageb5);
+
+    glGenTextures(1, &Cell::textureb6);
+    glBindTexture(GL_TEXTURE_2D,Cell::textureb6);
+
+    // Set the texture wrapping parameters
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
+    // // Set texture filtering parameters
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+
+    unsigned char* imageb6 = SOIL_load_image("b_purple.png", &width, &height, 0, SOIL_LOAD_RGB);
+    glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, imageb6);
+    SOIL_free_image_data(imageb6);
 }
 
 Cell::Cell(const Cell& c){
@@ -195,7 +286,7 @@ void Cell::setColor(){
     }
 }
 
-void Cell::setTexture(){
+void Cell::setTexture(bool pattern){
     GLfloat cl1[] = { 0.2, 0.2, 0.2, 1.0 };
     GLfloat cl2[] = { 1.0, 1.0, 1.0, 1.0 };
     GLfloat cl3[] = { 1.0, 1.0, 1.0, 1.0 };
@@ -203,22 +294,28 @@ void Cell::setTexture(){
     float shininess = 50.0;
     if(color == RED){
         glColor3f(1.0f,0.0f,0.0f);
-        glBindTexture(GL_TEXTURE_2D, Cell::texture1);
+        if (pattern) glBindTexture(GL_TEXTURE_2D, Cell::texture1);
+            else glBindTexture(GL_TEXTURE_2D, Cell::textureb1);
     } else if(color == GREEN){
         glColor3f(0.0f,1.0f,0.0f);
-        glBindTexture(GL_TEXTURE_2D, Cell::texture2);
+        if (pattern) glBindTexture(GL_TEXTURE_2D, Cell::texture2);
+            else glBindTexture(GL_TEXTURE_2D, Cell::textureb2);
     } else if(color == WHITE){
         glColor3f(1.0f,1.0f,1.0f);
-        glBindTexture(GL_TEXTURE_2D, Cell::texture3);
+        if (pattern) glBindTexture(GL_TEXTURE_2D, Cell::texture3);
+            else glBindTexture(GL_TEXTURE_2D, Cell::textureb3);
     } else if(color == BLUE){
         glColor3f(0.0f,0.0f,1.0f);
-        glBindTexture(GL_TEXTURE_2D, Cell::texture4);
+        if (pattern) glBindTexture(GL_TEXTURE_2D, Cell::texture4);
+            else glBindTexture(GL_TEXTURE_2D, Cell::textureb4);
     } else if(color == ORANGE){
         glColor3f(1.0f,0.5f,0.0f);
-        glBindTexture(GL_TEXTURE_2D, Cell::texture5);
+        if (pattern) glBindTexture(GL_TEXTURE_2D, Cell::texture5);
+            else glBindTexture(GL_TEXTURE_2D, Cell::textureb5);
     } else if(color == YELLOW){
         glColor3f(1.0f,1.0f,0.0f);
-        glBindTexture(GL_TEXTURE_2D, Cell::texture6);
+        if (pattern) glBindTexture(GL_TEXTURE_2D, Cell::texture6);
+            else glBindTexture(GL_TEXTURE_2D, Cell::textureb6);
     }
     glEnable( GL_TEXTURE_2D );
     glMaterialfv(GL_FRONT, GL_AMBIENT, cl1);
@@ -252,7 +349,7 @@ int Cell::getFace(){
 }
 
 
-void Cell::drawCell(bool isTextured) {
+void Cell::drawCell(bool isTextured, bool pattern) {
     float size = 0.9f;
     float blackspace = 1.0f;
     float x = location.getX()*2.25;
@@ -275,7 +372,7 @@ void Cell::drawCell(bool isTextured) {
         glEnd();
 
         if (isTextured) {
-            setTexture();
+            setTexture(pattern);
             glBegin(GL_QUADS);		// Draw The Cube Using quads
             glTexCoord2f(0.0f, 1.0f); glVertex3f(x-size, y+size, z-size);	// Top Left Of The Quad (Top)
             glTexCoord2f(1.0f, 1.0f); glVertex3f(x+size, y+size, z-size);	// Top Right Of The Quad (Top)
@@ -305,7 +402,7 @@ void Cell::drawCell(bool isTextured) {
         glEnd();
 
         if (isTextured) {
-            setTexture();
+            setTexture(pattern);
             glBegin(GL_QUADS);		// Draw The Cube Using quads
             glTexCoord2f(0.0f, 1.0f); glVertex3f(x-size, y-size, z+size);	// Top Left Of The Quad (Bottom)
             glTexCoord2f(1.0f, 1.0f); glVertex3f(x+size, y-size, z+size);	// Top Right Of The Quad (Bottom)
@@ -335,7 +432,7 @@ void Cell::drawCell(bool isTextured) {
         glEnd();
 
         if (isTextured) {
-            setTexture();
+            setTexture(pattern);
             glBegin(GL_QUADS);		// Draw The Cube Using quads
             glTexCoord2f(0.0f, 1.0f); glVertex3f(x+size, y+size, z+size);	// Top Left Of The Quad (Right)
             glTexCoord2f(1.0f, 1.0f); glVertex3f(x+size, y+size, z-size);	// Top Right Of The Quad (Right)
@@ -365,7 +462,7 @@ void Cell::drawCell(bool isTextured) {
         glEnd();
 
         if (isTextured) {
-            setTexture();
+            setTexture(pattern);
             glBegin(GL_QUADS);		// Draw The Cube Using quads
             glTexCoord2f(0.0f, 1.0f); glVertex3f(x-size, y+size, z-size);	// Top Left Of The Quad (Left)
             glTexCoord2f(1.0f, 1.0f); glVertex3f(x-size, y+size, z+size);	// Top Right Of The Quad (Left)
@@ -395,7 +492,7 @@ void Cell::drawCell(bool isTextured) {
         glEnd();
 
         if (isTextured) {
-            setTexture();
+            setTexture(pattern);
             glBegin(GL_QUADS);		// Draw The Cube Using quads
             glTexCoord2f(0.0f, 1.0f); glVertex3f(x+size, y+size, z-size); 	// Top Left Of The Quad (Back)
             glTexCoord2f(1.0f, 1.0f); glVertex3f(x-size, y+size, z-size); 	// Top Right Of The Quad (Back)
@@ -425,7 +522,7 @@ void Cell::drawCell(bool isTextured) {
         glEnd();
 
         if (isTextured) {
-            setTexture();
+            setTexture(pattern);
             glBegin(GL_QUADS);		// Draw The Cube Using quads
             glTexCoord2f(0.0f, 1.0f); glVertex3f(x-size, y+size, z+size);	// Top Left Of The Quad (Front)
             glTexCoord2f(1.0f, 1.0f); glVertex3f(x+size, y+size, z+size);	// Top Right Of The Quad (Front)

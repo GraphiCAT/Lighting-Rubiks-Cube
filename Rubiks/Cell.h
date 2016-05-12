@@ -27,9 +27,9 @@ class Cell
         void setLocation(Point3D _location);
         Point3D getNormal();
         void setNormal(Point3D _normal);
-        void drawCell(bool isTextured);
+        void drawCell(bool isTextured, bool pattern);
         void setColor();
-        void setTexture();
+        void setTexture(bool pattern);
         int getFace();
         static void initTexture();
         static GLuint LoadTextureRAW( const char * filename, int wrap );
@@ -48,6 +48,12 @@ class Cell
         static GLuint texture4;
         static GLuint texture5;
         static GLuint texture6;
+        static GLuint textureb1;
+        static GLuint textureb2;
+        static GLuint textureb3;
+        static GLuint textureb4;
+        static GLuint textureb5;
+        static GLuint textureb6;
 };
 
 #endif // Cell_H
