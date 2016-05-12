@@ -23,7 +23,6 @@
 using namespace std;
 
 bool Cube::solve = false;
-GLfloat qaLightPosition[]	= {.5, .5, 0.0, 0.0};
 
 Cube::Cube() {
     Point3D top(0,-1,0);
@@ -142,7 +141,6 @@ void Cube::rotateAll(int axis, int direction) {
 void Cube::rotateByAxis(GLfloat angle, int axis) {
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT); // Clear color and depth buffers
 
-
   switch (axis) {
     case ALLX:
       glRotatef(angle,1.0f,0.0f,0.0f);
@@ -156,8 +154,8 @@ void Cube::rotateByAxis(GLfloat angle, int axis) {
     default:
       break;
   }
-  glLightfv(GL_LIGHT0, GL_POSITION, qaLightPosition);
   drawCube();
+
   glutSwapBuffers();
 }
 
@@ -297,13 +295,14 @@ void Cube::rotateSlice(GLfloat angle, vector<int> rotate, Point3D axis) {
     glPushMatrix();
     //Rotate around axis
     glRotatef(angle,(GLfloat)axis.getX(),(GLfloat)axis.getY(),(GLfloat)axis.getZ());
-    //glLightfv(GL_LIGHT0, GL_POSITION, qaLightPosition);
 
     //Draw rotated
-    for (int i=0; i<(int)rotate.size(); i++) {
+    for (int i = 0; i < rotate.size(); i++) {
         surface[rotate.at(i)].drawCell();
     }
+
     glPopMatrix();
+
     glutSwapBuffers();
 }
 
@@ -311,12 +310,12 @@ void Cube::swapColors(vector<int> array, int jump) {
   vector<int> colors;
 
   //copy colors to temp vector
-  for (int i=0;i<(int)array.size(); i++) {
+  for (int i=0;i<array.size();i++) {
     colors.push_back(surface[array.at(i)].getColor());
   }
 
   //swap colors from vector
-  for (int i=0; i<(int)array.size(); i++) {
+  for (int i=0;i<array.size();i++) {
     surface[array.at(i)].setColor(colors.at((i+array.size()+jump)%array.size()));
   }
 }

@@ -103,6 +103,8 @@ int Cell::getFace(){
         return 4;
     } else if (normal.isEquals(infront)) {
         return 5;
+    } else {
+        return 0;
     }
 }
 
