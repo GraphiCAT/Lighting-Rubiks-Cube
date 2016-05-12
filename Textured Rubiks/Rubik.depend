@@ -591,7 +591,7 @@
 
 1461499649 d:\tifani warnita\schools - college\itb\hmif itb\informatics engineering\6th semester\if3260 - computer graphics\assignments\rubik-s-cube\rubik\soil\soil.h
 
-1461569901 source:d:\tifani warnita\schools - college\itb\hmif itb\informatics engineering\6th semester\if3260 - computer graphics\assignments\lighting-rubiks-cube\textured rubiks\cell.cpp
+1463019778 source:d:\tifani warnita\schools - college\itb\hmif itb\informatics engineering\6th semester\if3260 - computer graphics\assignments\lighting-rubiks-cube\textured rubiks\cell.cpp
 	"Cell.h"
 	<windows.h>
 	<GL/glut.h>
@@ -633,7 +633,7 @@
 	<vector>
 	<GL/glut.h>
 
-1461550495 source:d:\tifani warnita\schools - college\itb\hmif itb\informatics engineering\6th semester\if3260 - computer graphics\assignments\lighting-rubiks-cube\textured rubiks\drawhandler.cpp
+1463018585 source:d:\tifani warnita\schools - college\itb\hmif itb\informatics engineering\6th semester\if3260 - computer graphics\assignments\lighting-rubiks-cube\textured rubiks\drawhandler.cpp
 	"DrawHandler.h"
 	"Point3D.h"
 	"Cell.h"
@@ -641,7 +641,7 @@
 	"Cube5.h"
 	<vector>
 
-1461502067 d:\tifani warnita\schools - college\itb\hmif itb\informatics engineering\6th semester\if3260 - computer graphics\assignments\lighting-rubiks-cube\textured rubiks\drawhandler.h
+1463018616 d:\tifani warnita\schools - college\itb\hmif itb\informatics engineering\6th semester\if3260 - computer graphics\assignments\lighting-rubiks-cube\textured rubiks\drawhandler.h
 	<iostream>
 	<windows.h>
 	<GL/glut.h>
